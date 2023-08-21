@@ -14,4 +14,20 @@ export const HeaderWrapper = styled.div`
   align-items: center;
 `;
 
+export const HeaderNavWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  & > :not(:first-child) {
+    margin-left: 48px;
+  }
+`;
+
+export const HeaderNavContainer = styled.div`
+  display: flex;
+  align-items: center;
+  & > :not(:first-child) {
+    margin-left: 32px;
+  }
+`;
+
 export const FooterWrapper = styled.div``;

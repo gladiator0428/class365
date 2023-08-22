@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+import { Pagination, Navigation } from "swiper";
 import { HiOutlineArrowRight, HiOutlineArrowLeft } from "react-icons/hi";
 import * as Styled from "./discover.styles";
 import * as Comp from "../../../components";
@@ -23,10 +23,10 @@ export const Discover: React.FC = () => {
             Awards for 3 consecutive years
           </p>
           <Styled.CustomNavigator>
-            <span>
+            <span className="prev">
               <HiOutlineArrowLeft />
             </span>
-            <span>
+            <span className="next">
               <HiOutlineArrowRight />
             </span>
           </Styled.CustomNavigator>
@@ -40,9 +40,13 @@ export const Discover: React.FC = () => {
             // pagination={{
             //   clickable: true,
             // }}
+            navigation={{
+              prevEl: ".prev",
+              nextEl: ".next",
+            }}
             loop
             dir="rtl"
-            modules={[Pagination]}
+            modules={[Pagination, Navigation]}
             className="mySwiper"
           >
             {discovers.map((row, index) => (

@@ -6,6 +6,7 @@ export const InstitutionsWrapper = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
+  align-items: center;
 `;
 
 export const InstitutionContainer = styled.div`
@@ -66,6 +67,7 @@ export const InstitutionItemWrapper = styled.div`
     }
   }
   div {
+    cursor: pointer;
     width: fit-content;
     padding: 16px 64px;
     font-size: 20px;

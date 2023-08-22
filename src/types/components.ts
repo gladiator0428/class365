@@ -22,3 +22,11 @@ export type IResourceCardProps = {
   badgeColor: string;
   title: string;
 };
+
+export type IDiscoverCardProps = {
+  title: string;
+  description: string;
+  avatar: string;
+  name: string;
+  role: string;
+};

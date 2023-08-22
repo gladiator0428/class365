@@ -46,9 +46,10 @@ export const LandingVideoWrapper = styled.div`
   width: 100%;
   height: 554px;
   position: relative;
-  img {
+  svg {
     position: absolute;
-    bottom: -30px;
-    right: -30px;
+    bottom: -20px;
+    right: -20px;
+    transform: rotate(26.368deg);
   }
 `;

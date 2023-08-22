@@ -1,4 +1,5 @@
 import React from "react";
+import { TypeAnimation } from "react-type-animation";
 import { BsArrowRight } from "react-icons/bs";
 import * as Styled from "./landing.styles";
 import * as Comp from "../../../components";
@@ -7,7 +8,21 @@ export const Landing: React.FC = () => {
   return (
     <Styled.LandingSectionWrapper>
       <h1>
-        Transforming <span>Education,</span>
+        Transforming{" "}
+        <span>
+          <TypeAnimation
+            sequence={[
+              "Education,",
+              2000,
+              "Student Management,",
+              2000,
+              "The Learner Journey,",
+              2000,
+            ]}
+            speed={30}
+            repeat={Infinity}
+          />
+        </span>
         <br /> One Institution at a Time
       </h1>
       <p>
@@ -29,7 +44,8 @@ export const Landing: React.FC = () => {
         </Comp.Button>
       </Styled.LandingButtonWrapper>
       <Styled.LandingVideoWrapper>
-        <img src="/assets/images/shapes/shape-6.png" alt="shape" />
+        <Comp.Shape6 />
+        {/* <img src="/assets/images/shapes/shape-6.png" alt="shape" /> */}
       </Styled.LandingVideoWrapper>
     </Styled.LandingSectionWrapper>
   );

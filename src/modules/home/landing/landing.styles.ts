@@ -1,4 +1,10 @@
-import { styled } from "styled-components";
+import { keyframes, styled } from "styled-components";
+
+const bubbleAnim = keyframes`
+  50% {
+    transform: translateY(-10px) rotate(26.368deg);
+  }
+`;
 
 export const LandingSectionWrapper = styled.div`
   padding: 60px 0 110px;
@@ -50,6 +56,40 @@ export const LandingVideoWrapper = styled.div`
     position: absolute;
     bottom: -20px;
     right: -20px;
-    transform: rotate(26.368deg);
+    transform: translateY(0px) rotate(26.368deg);
+    animation: ${bubbleAnim} 2s infinite ease-in-out;
+  }
+`;
+
+export const LandingShapeWrapper = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  svg {
+    position: absolute;
+    transform: translateY(0px) rotate(26.368deg);
+    animation: ${bubbleAnim} 2s infinite ease-in-out;
+  }
+  .shape-1 {
+    top: 14%;
+    left: 5%;
+  }
+  .shape-2 {
+    top: 8%;
+    right: 8%;
+  }
+  .shape-3 {
+    top: 50%;
+    left: 4%;
+  }
+  .shape-4 {
+    top: 45%;
+    right: 0;
+  }
+  .shape-5 {
+    bottom: 0%;
+    left: 50%;
   }
 `;

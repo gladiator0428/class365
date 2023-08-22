@@ -30,3 +30,9 @@ export type IDiscoverCardProps = {
   name: string;
   role: string;
 };
+
+export type IFeatureCard = {
+  image: string;
+  title: string;
+  subtitle: string;
+};

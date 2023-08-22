@@ -7,6 +7,9 @@ export const ButtonWrapper = styled.div<IButtonProps>`
   border: ${({ border }) => "1px solid " + border};
   border-radius: 9999px;
   display: flex;
+  .shadow {
+    box-shadow: 0px 2px 20px 0px #e1e1e1;
+  }
   align-items: center;
   ${({ size }) => {
     switch (size) {

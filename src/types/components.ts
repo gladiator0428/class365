@@ -12,5 +12,21 @@ export type IButtonProps = {
   border?: string;
   font?: string;
   bg?: string;
+  className?: string;
   size?: "sm" | "md" | "lg";
 } & React.HTMLAttributes<HTMLElement>;
+
+export type IResourceCardProps = {
+  image?: string;
+  badge: string;
+  badgeColor: string;
+  title: string;
+};
+
+export type IDiscoverCardProps = {
+  title: string;
+  description: string;
+  avatar: string;
+  name: string;
+  role: string;
+};

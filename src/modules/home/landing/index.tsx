@@ -47,6 +47,13 @@ export const Landing: React.FC = () => {
         <Comp.Shape6 />
         {/* <img src="/assets/images/shapes/shape-6.png" alt="shape" /> */}
       </Styled.LandingVideoWrapper>
+      <Styled.LandingShapeWrapper>
+        <Comp.Shape1 className="shape-1" />
+        <Comp.Shape2 className="shape-2" />
+        <Comp.Shape3 className="shape-3" />
+        <Comp.Shape4 className="shape-4" />
+        <Comp.Shape5 className="shape-5" />
+      </Styled.LandingShapeWrapper>
     </Styled.LandingSectionWrapper>
   );
 };

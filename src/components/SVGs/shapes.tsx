@@ -1,10 +1,14 @@
-export const Shape1: React.FC = () => (
+import React from "react";
+type SVGAttributes = React.SVGProps<SVGSVGElement>;
+
+export const Shape1: React.FC<SVGAttributes> = (props) => (
   <svg
     width="48"
     height="48"
     viewBox="0 0 48 48"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <g clipPath="url(#clip0_2491_15620)">
       <g filter="url(#filter0_ii_2491_15620)">
@@ -77,13 +81,14 @@ export const Shape1: React.FC = () => (
   </svg>
 );
 
-export const Shape2: React.FC = () => (
+export const Shape2: React.FC<SVGAttributes> = (props) => (
   <svg
     width="48"
     height="48"
     viewBox="0 0 48 48"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <g clipPath="url(#clip0_2491_15623)">
       <g filter="url(#filter0_ii_2491_15623)">
@@ -157,13 +162,14 @@ export const Shape2: React.FC = () => (
   </svg>
 );
 
-export const Shape3: React.FC = () => (
+export const Shape3: React.FC<SVGAttributes> = (props) => (
   <svg
     width="48"
     height="48"
     viewBox="0 0 48 48"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <g clipPath="url(#clip0_2491_15621)">
       <g filter="url(#filter0_ii_2491_15621)">
@@ -237,13 +243,14 @@ export const Shape3: React.FC = () => (
   </svg>
 );
 
-export const Shape4: React.FC = () => (
+export const Shape4: React.FC<SVGAttributes> = (props) => (
   <svg
     width="48"
     height="48"
     viewBox="0 0 48 48"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <g filter="url(#filter0_ii_2491_15625)">
       <path
@@ -312,13 +319,14 @@ export const Shape4: React.FC = () => (
   </svg>
 );
 
-export const Shape5: React.FC = () => (
+export const Shape5: React.FC<SVGAttributes> = (props) => (
   <svg
     width="48"
     height="48"
     viewBox="0 0 48 48"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <g clipPath="url(#clip0_2491_15622)">
       <g filter="url(#filter0_ii_2491_15622)">
@@ -392,13 +400,14 @@ export const Shape5: React.FC = () => (
   </svg>
 );
 
-export const Shape6: React.FC = () => (
+export const Shape6: React.FC<SVGAttributes> = (props) => (
   <svg
     width="48"
     height="48"
     viewBox="0 0 48 48"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <g clipPath="url(#clip0_2491_15626)">
       <g filter="url(#filter0_ii_2491_15626)">
@@ -470,13 +479,14 @@ export const Shape6: React.FC = () => (
   </svg>
 );
 
-export const Shape7: React.FC = () => (
+export const Shape7: React.FC<SVGAttributes> = (props) => (
   <svg
     width="48"
     height="48"
     viewBox="0 0 48 48"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <g filter="url(#filter0_ii_2512_116)">
       <path

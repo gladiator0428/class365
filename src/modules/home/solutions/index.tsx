@@ -29,7 +29,7 @@ export const Solutions: React.FC = () => {
         </Styled.SolutionContainer>
         <Styled.SolutionImageWrapper bg={solutions[selected].image}>
           <div>
-            <img src={solutions[selected].image} alt="Solution Image" />
+            <img src={solutions[selected].image} alt="Solution" />
           </div>
         </Styled.SolutionImageWrapper>
       </Styled.SolutionContentWrapper>

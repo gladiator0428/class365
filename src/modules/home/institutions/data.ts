@@ -12,11 +12,11 @@ export const institutions = [
   {
     title: "Academies",
     text: "Boost enrolment, streamline your operations, and improve learning with our school management system.",
-    image: "/assets/images/institution/1.png",
+    image: "/assets/images/institution/3.png",
   },
   {
     title: "Corporate Learning",
     text: "Boost enrolment, streamline your operations, and improve learning with our school management system.",
-    image: "/assets/images/institution/2.png",
+    image: "/assets/images/institution/4.png",
   },
 ];

@@ -5,7 +5,7 @@ import type { IFeatureCard } from "../../types";
 export const FeatureCard: React.FC<IFeatureCard> = (props) => {
   return (
     <Styled.FeatureCardWrapper>
-      <img src={props.image} alt="Image" />
+      <img src={props.image} alt="Feature" />
       <div>
         <h5>{props.title}</h5>
         <p>{props.subtitle}</p>

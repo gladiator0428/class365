@@ -469,3 +469,75 @@ export const Shape6: React.FC = () => (
     </defs>
   </svg>
 );
+
+export const Shape7: React.FC = () => (
+  <svg
+    width="48"
+    height="48"
+    viewBox="0 0 48 48"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g filter="url(#filter0_ii_2512_116)">
+      <path
+        d="M46.2 42.8C46.2 45.0091 44.4091 46.8 42.2 46.8H5C2.79087 46.8 1 45.0091 1 42.8V23.6C1 11.1 11.1 1 23.6 1C36.1 1 46.2 11.1 46.2 23.6V42.8ZM11 32.8C11 35.0091 12.7909 36.8 15 36.8H32.3C34.5091 36.8 36.3 35.0091 36.3 32.8V23.6C36.3 16.6 30.6 11 23.7 11C16.8 11 11 16.7 11 23.6V32.8Z"
+        fill="#0099DD"
+      />
+    </g>
+    <defs>
+      <filter
+        id="filter0_ii_2512_116"
+        x="-3"
+        y="-4"
+        width="53.2"
+        height="55.8"
+        filterUnits="userSpaceOnUse"
+        colorInterpolationFilters="sRGB"
+      >
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="BackgroundImageFix"
+          result="shape"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dx="4" dy="6" />
+        <feGaussianBlur stdDeviation="2.5" />
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="shape"
+          result="effect1_innerShadow_2512_116"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dx="-4" dy="-6" />
+        <feGaussianBlur stdDeviation="2.5" />
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0.169167 0 0 0 0 0.291667 0 0 0 0.25 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="effect1_innerShadow_2512_116"
+          result="effect2_innerShadow_2512_116"
+        />
+      </filter>
+    </defs>
+  </svg>
+);

@@ -7,7 +7,7 @@ export const Book: React.FC = () => {
   return (
     <Styled.BookSectionWrapper>
       <Styled.BookImageWrapper>
-        <img src="/assets/images/footer/book.png" alt="Book Image" />
+        <img src="/assets/images/footer/book.png" alt="Book" />
       </Styled.BookImageWrapper>
       <Styled.BookSectionContainer>
         <h2>Start with</h2>

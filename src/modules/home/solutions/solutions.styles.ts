@@ -86,7 +86,7 @@ export const SolutionImageWrapper = styled.div<{ bg: string }>`
   width: 100%;
   div {
     transition: all 0.3s;
-    width: calc(60% - 36px);
+    width: calc(60% - 40px);
     background: url(${({ bg }) => bg}) no-repeat;
     background-size: 100% 100%;
     image-rendering: pixelated;

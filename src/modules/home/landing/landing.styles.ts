@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const LandingSectionWrapper = styled.div`
-  padding: 60px 0 160px;
+  padding: 60px 0 110px;
   width: 95%;
   margin: auto;
   position: relative;

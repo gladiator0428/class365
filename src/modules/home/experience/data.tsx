@@ -12,14 +12,14 @@ export const experiences = [
     subtitle: "Student Learning management",
     icon: <Shape.Shape3 />,
     color: "#A389F4",
-    title: "Boost Your Reachand Enrolment",
-    text: "Simplify enrolment with our one-click feature! Increase your reach quick and easy. Join us today and watch your enrolments soar!",
+    title: "Learning management made simple with our education ERP system",
+    text: "Break data silos and benefit from comprehensive organizational analytics. Unlock a wealth of insights in no time with our user-friendly student management system. Ready to take the first step? Join us today!",
   },
   {
     subtitle: "Graduation & Alumni",
     icon: <Shape.Shape7 />,
     color: "#4ED163",
-    title: "Boost Your Reachand Enrolment",
-    text: "Simplify enrolment with our one-click feature! Increase your reach quick and easy. Join us today and watch your enrolments soar!",
+    title: "Engaging Alumni Community made Easy",
+    text: "Create a thriving community with our smart solutions! We offer fundraising, career placement and reselling opportunities. Join to start building a community!",
   },
 ];

@@ -5,7 +5,7 @@ export const experiences = [
     subtitle: "Marketing & Admission",
     icon: <Shape.Shape1 />,
     color: "#6772E5",
-    title: "Boost Your Reachand Enrolment",
+    title: "Boost Your Reach and Enrolment",
     text: "Simplify enrolment with our one-click feature! Increase your reach quick and easy. Join us today and watch your enrolments soar!",
   },
   {

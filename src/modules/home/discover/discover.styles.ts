@@ -114,6 +114,9 @@ export const DiscoverSliderWrapper = styled.div`
   .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: #6772e5;
   }
+  .swiper-pagination {
+    display: none;
+  }
   @media screen and (max-width: 768px) {
     & > div {
       width: 95%;
@@ -121,6 +124,9 @@ export const DiscoverSliderWrapper = styled.div`
     }
     .swiper {
       padding-bottom: 50px;
+    }
+    .swiper-pagination {
+      display: block;
     }
   }
 `;

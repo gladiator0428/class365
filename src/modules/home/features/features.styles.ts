@@ -57,6 +57,10 @@ export const FeaturesDescription = styled.div`
     font-weight: 400;
     line-height: 28px;
   }
+  img {
+    width: 48px;
+    height: 48px;
+  }
   @media screen and (max-width: 768px) {
     max-width: 100%;
     margin-bottom: 18px;

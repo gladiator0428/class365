@@ -116,6 +116,22 @@ export const SolutionCardWrapper = styled.div`
     div {
       display: none;
     }
+    h4 {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #6772e5;
+      display: flex;
+      align-items: center;
+      svg {
+        margin-left: 8px;
+        transition: all 0.3s;
+      }
+      &:hover {
+        svg {
+          transform: translateX(5px);
+        }
+      }
+    }
   }
   @media screen and (max-width: 1024px) {
     h3 {

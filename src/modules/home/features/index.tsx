@@ -11,7 +11,8 @@ export const Features: React.FC = () => {
     <Styled.FeaturesWrapper>
       <Styled.FeaturesInfoWrapper>
         <Styled.FeaturesDescription>
-          <Comp.FeatureIcon />
+          {/* <Comp.FeatureIcon /> */}
+          <img src="/assets/images/clap.gif" alt="" />
           <h2>Feathers in our cap</h2>
           <p>
             Most awarded EdTech company of 2021/22, including being part of Top

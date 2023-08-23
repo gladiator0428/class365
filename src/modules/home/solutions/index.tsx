@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import * as Styled from "./solutions.styles";
 import * as Data from "./data";
+import { BsArrowRight } from "react-icons/bs";
 
 export const Solutions: React.FC = () => {
   const [selected, setSelected] = useState(0);
@@ -10,7 +11,7 @@ export const Solutions: React.FC = () => {
     <Styled.SolutionsWrapper>
       <Styled.SolutionTitleWrapper>
         <h5>Greate solutions for everyone</h5>
-        <h1>Smart Solutions For Learning Managements Teams</h1>
+        <h1>Student Management System For Learning Management Teams</h1>
       </Styled.SolutionTitleWrapper>
       <Styled.SolutionContentWrapper>
         <Styled.SolutionImageWrapper bg={solutions[selected].image}>
@@ -33,6 +34,9 @@ export const Solutions: React.FC = () => {
                 <p>
                   <span>{row.text}</span>
                   <div></div>
+                  <h4>
+                    Start Free 14-days trial <BsArrowRight />
+                  </h4>
                 </p>
               </Styled.SolutionCardWrapper>
             ))}

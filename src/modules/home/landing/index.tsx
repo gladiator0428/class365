@@ -23,7 +23,7 @@ export const Landing: React.FC = () => {
               2000,
               "Student Management,",
               2000,
-              "The Learner Journey,",
+              "Learner Journey,",
               2000,
             ]}
             speed={30}
@@ -34,7 +34,7 @@ export const Landing: React.FC = () => {
       </h1>
       <p>
         Unlock a seamless learner journey. From admission to alumni networking,
-        and beyond - our complete education solution has you covered.
+        and beyond - our complete education ERP software has you covered.
       </p>
       <Styled.LandingButtonWrapper>
         <Comp.Button

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 import { HiOutlineArrowRight, HiOutlineArrowLeft } from "react-icons/hi";
@@ -8,19 +8,6 @@ import * as Data from "./data";
 
 export const Discover: React.FC = () => {
   const { discovers } = Data;
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  const handleResize = () => {
-    setIsMobile(window.innerWidth > 768 ? false : true);
-  };
 
   return (
     <Styled.DiscoverWrapper>
@@ -51,7 +38,7 @@ export const Discover: React.FC = () => {
             slidesPerView={"auto"}
             spaceBetween={30}
             pagination={{
-              enabled: isMobile,
+              enabled: true,
             }}
             navigation={{
               prevEl: ".prev",

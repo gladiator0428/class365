@@ -6,6 +6,24 @@ const bubbleAnim = keyframes`
   }
 `;
 
+const scaleAnim = keyframes`
+  50% {
+    transform: scale(1.2);
+  }
+`;
+
+const rotateAnim = keyframes`
+  0% {
+    transform: rotate(0deg) translateY(0);
+  }
+  50% {
+    transform: rotate(180deg) translateY(-10px);
+  }
+  100% {
+    transform: rotate(360deg) translateY(0);
+  }
+`;
+
 export const LandingSectionWrapper = styled.div`
   padding: 60px 0 110px;
   width: 95%;
@@ -121,27 +139,32 @@ export const LandingShapeWrapper = styled.div`
   pointer-events: none;
   svg {
     position: absolute;
-    transform: translateY(0px) rotate(26.368deg);
-    animation: ${bubbleAnim} 2s infinite ease-in-out;
+    transform: translateY(10px) rotate(26.368deg);
   }
   .shape-1 {
+    animation: ${bubbleAnim} 2s infinite ease-in-out;
     top: 14%;
     left: 5%;
   }
   .shape-2 {
+    animation: ${bubbleAnim} 3s infinite ease-in-out;
     top: 8%;
     right: 8%;
   }
   .shape-3 {
+    animation: ${scaleAnim} 2s infinite ease-in-out;
     top: 50%;
     left: 4%;
+    transform-origin: 50% 50%;
   }
   .shape-4 {
+    animation: ${rotateAnim} 3s linear infinite;
     top: 45%;
     right: 0;
   }
   .shape-5 {
-    bottom: 0%;
+    animation: ${rotateAnim} 3s infinite ease-in-out;
+    bottom: 2%;
     left: 50%;
   }
   @media screen and (max-width: 768px) {

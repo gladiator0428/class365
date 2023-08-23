@@ -3,6 +3,10 @@ import { styled } from "styled-components";
 export const SolutionsWrapper = styled.div`
   background: #f9f9ff;
   padding: 90px 0;
+  @media screen and (max-width: 768px) {
+    background-color: #fff;
+    padding: 16px 0 56px;
+  }
 `;
 
 export const SolutionTitleWrapper = styled.div`
@@ -23,6 +27,16 @@ export const SolutionTitleWrapper = styled.div`
     font-size: 36px;
     font-weight: 700;
   }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 30px;
+    h5 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 24px;
+    }
+  }
 `;
 
 export const SolutionContainer = styled.div`
@@ -30,10 +44,36 @@ export const SolutionContainer = styled.div`
   width: 95%;
   margin: auto;
   position: absolute;
-  & > div {
+  .list {
     max-width: 476px;
     width: 40%;
     margin-left: auto;
+  }
+  .image-wrapper {
+    display: none;
+  }
+  @media screen and (max-width: 1280px) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    .image-wrapper {
+      display: block;
+      width: 55%;
+      img {
+        width: 100%;
+        height: auto;
+        image-rendering: pixelated;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .image-wrapper {
+      display: none;
+    }
+    .list {
+      max-width: 100%;
+      width: 100%;
+    }
   }
 `;
 
@@ -48,7 +88,7 @@ export const SolutionCardWrapper = styled.div`
   &.active {
     padding: 24px;
     margin-bottom: 24px;
-    border-bottom: 1px solid #f0f0f000;
+    border-bottom: none;
     border-radius: 12px;
     background: #fff;
     box-shadow: 0px 2px 20px 0px #e1e1e1;
@@ -73,6 +113,36 @@ export const SolutionCardWrapper = styled.div`
     padding-top: 0;
     font-weight: 400;
     line-height: 24px; /* 133.333% */
+    div {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    h3 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    padding: 24px;
+    border-bottom: none;
+    border-radius: 12px;
+    box-shadow: 0px 2px 10px 0px rgba(175, 175, 175, 0.25);
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+    p {
+      div {
+        display: block;
+        width: 100%;
+        padding-top: 60%;
+        margin-top: 10px;
+        position: relative;
+        background: #d9d9d9;
+      }
+    }
   }
 `;
 
@@ -84,6 +154,7 @@ export const SolutionContentWrapper = styled.div`
 
 export const SolutionImageWrapper = styled.div<{ bg: string }>`
   width: 100%;
+  pointer-events: none;
   div {
     transition: all 0.3s;
     width: calc(60% - 40px);
@@ -94,5 +165,8 @@ export const SolutionImageWrapper = styled.div<{ bg: string }>`
       opacity: 0;
       width: 100%;
     }
+  }
+  @media screen and (max-width: 1280px) {
+    display: none;
   }
 `;

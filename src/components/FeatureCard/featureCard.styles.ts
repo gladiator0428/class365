@@ -13,7 +13,7 @@ export const FeatureCardWrapper = styled.div`
     margin-right: 16px;
   }
   div {
-    max-width: 184px;
+    width: 184px;
     flex: 1;
   }
   h5 {
@@ -26,5 +26,8 @@ export const FeatureCardWrapper = styled.div`
     color: #1f3ce0;
     font-size: 14px;
     font-weight: 400;
+  }
+  @media screen and (max-width: 768px) {
+    height: 100%;
   }
 `;

@@ -2,7 +2,9 @@ import { styled } from "styled-components";
 
 export const AppLayoutWrapper = styled.div``;
 
-export const AppContentWrapper = styled.div``;
+export const AppContentWrapper = styled.div`
+  contain: content;
+`;
 
 export const HeaderWrapper = styled.div`
   max-width: 1240px;

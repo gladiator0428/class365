@@ -23,6 +23,9 @@ export const LandingSectionWrapper = styled.div`
     span {
       color: #9de01f;
     }
+    b {
+      display: block;
+    }
   }
   p {
     color: #3b3f42;
@@ -34,6 +37,36 @@ export const LandingSectionWrapper = styled.div`
     margin: auto;
     margin-top: 24px;
   }
+  @media screen and (max-width: 1024px) {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    padding: 22px 0 30px;
+    align-items: flex-start;
+    h1 {
+      text-align: left;
+      line-height: 40px;
+      font-size: 36px;
+      span {
+        display: block;
+      }
+    }
+    p {
+      text-align: left;
+      margin-top: 10px;
+      line-height: 24px;
+      font-size: 18px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    h1 {
+      b {
+        max-width: 282px;
+      }
+    }
+  }
 `;
 
 export const LandingButtonWrapper = styled.div`
@@ -41,6 +74,17 @@ export const LandingButtonWrapper = styled.div`
   margin: 32px 0 40px;
   & > :not(:first-child) {
     margin-left: 16px;
+  }
+  @media screen and (max-width: 768px) {
+    margin: 24px 0;
+  }
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    width: 100%;
+    & > :not(:first-child) {
+      margin-left: 0;
+      margin-top: 16px;
+    }
   }
 `;
 
@@ -58,6 +102,13 @@ export const LandingVideoWrapper = styled.div`
     right: -20px;
     transform: translateY(0px) rotate(26.368deg);
     animation: ${bubbleAnim} 2s infinite ease-in-out;
+  }
+  @media screen and (max-width: 768px) {
+    height: 0;
+    padding-top: 60%;
+    svg {
+      display: none;
+    }
   }
 `;
 
@@ -92,5 +143,8 @@ export const LandingShapeWrapper = styled.div`
   .shape-5 {
     bottom: 0%;
     left: 50%;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 `;

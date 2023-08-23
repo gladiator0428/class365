@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper";
 import * as Styled from "./institutions.styles";
 import * as Data from "./data";
 
@@ -28,6 +30,32 @@ export const Institutions: React.FC = () => {
       <Styled.InstitutionImageWrapper bg={institutions[seleted].image}>
         <img src={institutions[seleted].image} alt="" />
       </Styled.InstitutionImageWrapper>
+      <Styled.InsititutionSwiper>
+        <Swiper
+          slidesPerView={"auto"}
+          spaceBetween={20}
+          pagination={{
+            enabled: true,
+          }}
+          loop
+          modules={[Pagination]}
+          className="mySwiper"
+        >
+          {institutions.map((row, index) => (
+            <SwiperSlide key={index}>
+              <Styled.InstitutionSwiperItemWrapper>
+                <h3>{row.title}</h3>
+                <p>{row.text}</p>
+                <div className="image-wrapper"></div>
+                <div className="info-wrapper">
+                  <h1>{row.amount}</h1>
+                  <span>{row.desc}</span>
+                </div>
+              </Styled.InstitutionSwiperItemWrapper>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </Styled.InsititutionSwiper>
     </Styled.InstitutionsWrapper>
   );
 };

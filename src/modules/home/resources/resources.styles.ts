@@ -12,6 +12,14 @@ export const ResourcesWrapper = styled.div`
     font-weight: 700;
     margin-bottom: 72px;
   }
+
+  @media screen and (max-width: 768px) {
+    & > h2 {
+      font-size: 24px;
+      margin-bottom: 26px;
+    }
+    margin-bottom: 56px;
+  }
 `;
 
 export const ResourcesGridWrapper = styled.div`
@@ -19,6 +27,13 @@ export const ResourcesGridWrapper = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 72px;
   margin-bottom: 48px;
+  @media screen and (max-width: 1024px) {
+    grid-gap: 40px;
+  }
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
 `;
 
 export const SeeMore = styled.a`
@@ -32,5 +47,8 @@ export const SeeMore = styled.a`
   margin: auto;
   span {
     margin-right: 8px;
+  }
+  @media screen and (max-width: 768px) {
+    margin: 0;
   }
 `;

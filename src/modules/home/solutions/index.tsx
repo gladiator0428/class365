@@ -13,8 +13,16 @@ export const Solutions: React.FC = () => {
         <h1>Smart Solutions For Learning Managements Teams</h1>
       </Styled.SolutionTitleWrapper>
       <Styled.SolutionContentWrapper>
-        <Styled.SolutionContainer>
+        <Styled.SolutionImageWrapper bg={solutions[selected].image}>
           <div>
+            <img src={solutions[selected].image} alt="Solution" />
+          </div>
+        </Styled.SolutionImageWrapper>
+        <Styled.SolutionContainer>
+          <div className="image-wrapper">
+            <img src={solutions[selected].image} alt="Solution" />
+          </div>
+          <div className="list">
             {solutions.map((row, key) => (
               <Styled.SolutionCardWrapper
                 key={key}
@@ -22,16 +30,14 @@ export const Solutions: React.FC = () => {
                 onClick={() => setSelected(key)}
               >
                 <h3>{row.title}</h3>
-                <p>{row.text}</p>
+                <p>
+                  <span>{row.text}</span>
+                  <div></div>
+                </p>
               </Styled.SolutionCardWrapper>
             ))}
           </div>
         </Styled.SolutionContainer>
-        <Styled.SolutionImageWrapper bg={solutions[selected].image}>
-          <div>
-            <img src={solutions[selected].image} alt="Solution" />
-          </div>
-        </Styled.SolutionImageWrapper>
       </Styled.SolutionContentWrapper>
     </Styled.SolutionsWrapper>
   );

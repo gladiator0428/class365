@@ -17,6 +17,11 @@ export const ResourceCardWrapper = styled.div`
     font-weight: 700;
     text-align: left;
   }
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 18px;
+    }
+  }
 `;
 
 export const ImageWrapper = styled.div`

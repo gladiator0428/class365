@@ -6,6 +6,12 @@ export const DiscoverWrapper = styled.div`
   display: flex;
   position: relative;
   justify-content: center;
+  @media screen and (max-width: 1024px) {
+    padding: 50px 0 56px;
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const DiscoverContainer = styled.div`
@@ -31,6 +37,29 @@ export const DiscoverContainer = styled.div`
     font-weight: 400;
     line-height: 28px; /* 155.556% */
   }
+  @media screen and (max-width: 1024px) {
+    h2 {
+      font-size: 24px;
+      margin: 20px 0;
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    & > div {
+      width: 50%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    position: relative;
+    & > div {
+      padding-left: 0;
+      width: 100%;
+    }
+    p {
+      margin-bottom: 32px;
+    }
+  }
 `;
 
 export const CustomNavigator = styled.div`
@@ -51,6 +80,9 @@ export const CustomNavigator = styled.div`
     &:not(:first-child) {
       margin-left: 12px;
     }
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 `;
 
@@ -74,5 +106,21 @@ export const DiscoverSliderWrapper = styled.div`
   .swiper-slide-active .discover-card {
     background: #f1f6fa;
     box-shadow: 0px 4px 20px 0px rgba(84, 84, 84, 0.25);
+  }
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+  }
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #6772e5;
+  }
+  @media screen and (max-width: 768px) {
+    & > div {
+      width: 95%;
+      margin: auto;
+    }
+    .swiper {
+      padding-bottom: 50px;
+    }
   }
 `;

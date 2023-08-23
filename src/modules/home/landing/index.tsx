@@ -7,6 +7,13 @@ import * as Comp from "../../../components";
 export const Landing: React.FC = () => {
   return (
     <Styled.LandingSectionWrapper>
+      <Styled.LandingShapeWrapper>
+        <Comp.Shape1 className="shape-1" />
+        <Comp.Shape2 className="shape-2" />
+        <Comp.Shape3 className="shape-3" />
+        <Comp.Shape4 className="shape-4" />
+        <Comp.Shape5 className="shape-5" />
+      </Styled.LandingShapeWrapper>
       <h1>
         Transforming{" "}
         <span>
@@ -23,7 +30,7 @@ export const Landing: React.FC = () => {
             repeat={Infinity}
           />
         </span>
-        <br /> One Institution at a Time
+        <b>One Institution at a Time</b>
       </h1>
       <p>
         Unlock a seamless learner journey. From admission to alumni networking,
@@ -47,13 +54,6 @@ export const Landing: React.FC = () => {
         <Comp.Shape6 />
         {/* <img src="/assets/images/shapes/shape-6.png" alt="shape" /> */}
       </Styled.LandingVideoWrapper>
-      <Styled.LandingShapeWrapper>
-        <Comp.Shape1 className="shape-1" />
-        <Comp.Shape2 className="shape-2" />
-        <Comp.Shape3 className="shape-3" />
-        <Comp.Shape4 className="shape-4" />
-        <Comp.Shape5 className="shape-5" />
-      </Styled.LandingShapeWrapper>
     </Styled.LandingSectionWrapper>
   );
 };

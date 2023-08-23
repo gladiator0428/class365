@@ -11,13 +11,11 @@ export const Experience: React.FC = () => {
         <h1>Experience the Best-in-Class with Classe365</h1>
       </Styled.TitleWrapper>
       <Styled.ImageWrapper>
-        <div>
-          <img src="/assets/images/experience.png" alt="" />
-        </div>
+        <img src="/assets/images/experience.png" alt="" />
       </Styled.ImageWrapper>
       <Styled.ExperienceContentWrapper>
         {experiences.map((row, index) => (
-          <Styled.ExperienceItemWrapper key={index}>
+          <Styled.ExperienceItemWrapper key={index} color={row.color}>
             <h3 style={{ color: row.color }}>{row.subtitle}</h3>
             {row.icon}
             <h2>{row.title}</h2>
@@ -25,6 +23,7 @@ export const Experience: React.FC = () => {
             <h4>
               Try it Free <BsArrowRight />
             </h4>
+            <div></div>
           </Styled.ExperienceItemWrapper>
         ))}
       </Styled.ExperienceContentWrapper>

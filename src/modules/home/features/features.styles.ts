@@ -5,6 +5,9 @@ export const FeaturesWrapper = styled.div`
   width: 95%;
   margin: auto;
   padding: 110px 0;
+  @media screen and (max-width: 768px) {
+    padding: 0 0 56px;
+  }
 `;
 
 export const FeaturesInfoWrapper = styled.div`
@@ -12,7 +15,11 @@ export const FeaturesInfoWrapper = styled.div`
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 65px;
-  margin-bottom: 65px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
 `;
 
 export const FeaturesContentWrapper = styled.div`
@@ -20,6 +27,20 @@ export const FeaturesContentWrapper = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   gap: 24px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const FeaturesSwiper = styled.div`
+  display: none;
+  .swiper-slide {
+    width: fit-content;
+    height: auto !important;
+  }
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
 `;
 
 export const FeaturesDescription = styled.div`
@@ -35,6 +56,22 @@ export const FeaturesDescription = styled.div`
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    margin-bottom: 18px;
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+    h2 {
+      margin: 16px 0 20px;
+      font-size: 24px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 `;
 
@@ -55,5 +92,8 @@ export const FeatureInfo = styled.div`
     color: #1e2123;
     font-size: 18px;
     font-weight: 700;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
   }
 `;

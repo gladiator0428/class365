@@ -1,4 +1,6 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode } from "swiper";
 import * as Styled from "./features.styles";
 import * as Comp from "../../../components";
 import * as Data from "./data";
@@ -26,6 +28,22 @@ export const Features: React.FC = () => {
           <Comp.FeatureCard key={index} {...row} />
         ))}
       </Styled.FeaturesContentWrapper>
+      <Styled.FeaturesSwiper>
+        <Swiper
+          slidesPerView={"auto"}
+          spaceBetween={24}
+          freeMode={true}
+          loop
+          className="mySwiper"
+          modules={[FreeMode]}
+        >
+          {features.map((row, index) => (
+            <SwiperSlide key={index}>
+              <Comp.FeatureCard {...row} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </Styled.FeaturesSwiper>
     </Styled.FeaturesWrapper>
   );
 };

@@ -3,9 +3,12 @@ import type { IButtonProps } from "../../types";
 
 export const ButtonWrapper = styled.div<IButtonProps>`
   background: ${({ bg }) => bg};
+  cursor: pointer;
   color: ${({ font }) => font};
   border: ${({ border }) => "1px solid " + border};
   border-radius: 9999px;
+  white-space: nowrap;
+  justify-content: center;
   display: flex;
   .shadow {
     box-shadow: 0px 2px 20px 0px #e1e1e1;

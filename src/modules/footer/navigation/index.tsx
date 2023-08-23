@@ -78,16 +78,20 @@ export const Navigation: React.FC = () => {
         <Styled.CopyrightWrapper>
           <p>Copyright © Classe365 | All Rights Reserved.</p>
           <Styled.SocialsNavWrapper>
-            {terms.map((row, index) => (
-              <a href={row.link} key={index}>
-                {row.label}
-              </a>
-            ))}
-            {socials.map((social, index) => (
-              <a href={social.link} key={index} className="social-link">
-                {social.icon}
-              </a>
-            ))}
+            <div>
+              {terms.map((row, index) => (
+                <a href={row.link} key={index}>
+                  {row.label}
+                </a>
+              ))}
+            </div>
+            <div>
+              {socials.map((social, index) => (
+                <a href={social.link} key={index} className="social-link">
+                  {social.icon}
+                </a>
+              ))}
+            </div>
           </Styled.SocialsNavWrapper>
         </Styled.CopyrightWrapper>
       </Styled.NavigationContainer>

@@ -6,9 +6,6 @@ import * as Comp from "../../../components";
 export const Book: React.FC = () => {
   return (
     <Styled.BookSectionWrapper>
-      <Styled.BookImageWrapper>
-        <img src="/assets/images/footer/book.png" alt="Book" />
-      </Styled.BookImageWrapper>
       <Styled.BookSectionContainer>
         <h2>Start with</h2>
         <h1>$50/month</h1>
@@ -26,6 +23,9 @@ export const Book: React.FC = () => {
           </Comp.Button>
         </Styled.BookButtoWrapper>
       </Styled.BookSectionContainer>
+      <Styled.BookImageWrapper>
+        <img src="/assets/images/footer/book.png" alt="Book" />
+      </Styled.BookImageWrapper>
     </Styled.BookSectionWrapper>
   );
 };

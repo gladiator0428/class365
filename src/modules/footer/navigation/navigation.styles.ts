@@ -19,14 +19,20 @@ export const FooterLogo = styled.img`
 export const NavigationGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  padding-bottom: 70px;
   gap: 49px;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const NavigationListWrapper = styled.div`
   & > :not(:first-child) {
     margin-top: 64px;
   }
-  padding-bottom: 70px;
 `;
 
 export const NavigationListContent = styled.div`
@@ -65,23 +71,39 @@ export const CopyrightWrapper = styled.div`
   padding-top: 24px;
   padding-bottom: 46px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   & > p {
     color: #f1f6fa;
     font-size: 14px;
     font-weight: 400;
   }
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+    & > p {
+      margin-top: 19px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    align-items: flex-start;
+  }
 `;
 
 export const SocialsNavWrapper = styled.div`
   display: flex;
   align-items: center;
+  div {
+    display: flex;
+    margin-right: 10px;
+  }
   a {
     color: #f1f6fa;
     text-decoration: none;
     display: block;
+    font-size: 14px;
     &.social-link {
       width: 34px;
+      font-size: 16px;
       height: 34px;
       display: flex;
       align-items: center;
@@ -92,6 +114,13 @@ export const SocialsNavWrapper = styled.div`
     }
     &:not(:first-child) {
       margin-left: 10px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    & > div:last-child {
+      margin-bottom: 16px;
     }
   }
 `;

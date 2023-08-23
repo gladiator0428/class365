@@ -5,6 +5,9 @@ export const NavItemWrapper = styled.div`
   align-items: center;
   cursor: pointer;
   position: relative;
+  @media screen and (max-width: 1024px) {
+    padding: 10px 0;
+  }
 `;
 
 export const NavLabel = styled.div`

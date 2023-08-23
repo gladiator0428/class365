@@ -67,6 +67,7 @@ export const LandingShapeWrapper = styled.div`
   right: 0;
   left: 0;
   bottom: 0;
+  pointer-events: none;
   svg {
     position: absolute;
     transform: translateY(0px) rotate(26.368deg);

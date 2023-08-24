@@ -8,6 +8,7 @@ export const Pricing: React.FC = () => {
       <Section.Navigation />
       <Section.CoreModules />
       <Section.AddonModules />
+      <Section.Services />
       <Section.FAQs />
     </AppLayout>
   );

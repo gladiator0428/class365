@@ -36,3 +36,10 @@ export type IFeatureCard = {
   title: string;
   subtitle: string;
 };
+
+export type IFAQCollapseProps = {
+  title: string;
+  desc: string;
+  onClick: () => void;
+  open: boolean;
+};

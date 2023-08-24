@@ -551,3 +551,517 @@ export const Shape7: React.FC<SVGAttributes> = (props) => (
     </defs>
   </svg>
 );
+
+export const Shape8: React.FC<SVGAttributes> = (props) => (
+  <svg
+    width="48"
+    height="48"
+    viewBox="0 0 48 48"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <g filter="url(#filter0_ii_2525_312)">
+      <path
+        d="M42.1 38.6C39.3 38.6 37.1 36.4 37.1 33.6C37.1 26.1 31 20 23.6 20C16.2 20 10 26.1 10 33.6C10 36.4 7.8 38.6 5 38.6C2.2 38.6 0 36.4 0 33.6C0 20.6 10.6 10 23.6 10C36.6 10 47.2 20.6 47.2 33.6C47.1 36.3 44.9 38.6 42.1 38.6Z"
+        fill="#1154D9"
+      />
+    </g>
+    <defs>
+      <filter
+        id="filter0_ii_2525_312"
+        x="-4"
+        y="5"
+        width="55.2"
+        height="38.6"
+        filterUnits="userSpaceOnUse"
+        colorInterpolationFilters="sRGB"
+      >
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="BackgroundImageFix"
+          result="shape"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dx="4" dy="6" />
+        <feGaussianBlur stdDeviation="2.5" />
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="shape"
+          result="effect1_innerShadow_2525_312"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dx="-4" dy="-6" />
+        <feGaussianBlur stdDeviation="2.5" />
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0.00506944 0 0 0 0 0.207163 0 0 0 0 0.608333 0 0 0 0.25 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="effect1_innerShadow_2525_312"
+          result="effect2_innerShadow_2525_312"
+        />
+      </filter>
+    </defs>
+  </svg>
+);
+
+export const Shape9: React.FC<SVGAttributes> = (props) => (
+  <svg
+    width="48"
+    height="48"
+    viewBox="0 0 48 48"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <g filter="url(#filter0_ii_2491_15624)">
+      <path
+        d="M24 42C33.9411 42 42 33.9411 42 24C42 14.0589 33.9411 6 24 6C14.0589 6 6 14.0589 6 24C6 33.9411 14.0589 42 24 42Z"
+        stroke="#6772E4"
+        strokeWidth="10"
+      />
+    </g>
+    <defs>
+      <filter
+        id="filter0_ii_2491_15624"
+        x="-3.8"
+        y="-5"
+        width="55.6"
+        height="58"
+        filterUnits="userSpaceOnUse"
+        colorInterpolationFilters="sRGB"
+      >
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="BackgroundImageFix"
+          result="shape"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dx="4.8" dy="7.2" />
+        <feGaussianBlur stdDeviation="3" />
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="shape"
+          result="effect1_innerShadow_2491_15624"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dx="-4.8" dy="-7.2" />
+        <feGaussianBlur stdDeviation="3" />
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0.0509259 0 0 0 0 0.583333 0 0 0 1 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="effect1_innerShadow_2491_15624"
+          result="effect2_innerShadow_2491_15624"
+        />
+      </filter>
+    </defs>
+  </svg>
+);
+
+export const Shape10: React.FC<SVGAttributes> = (props) => (
+  <svg
+    width="48"
+    height="48"
+    viewBox="0 0 48 48"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <g filter="url(#filter0_ii_2525_316)">
+      <path
+        d="M28.855 40.6226H10.71C5.31556 40.6226 1 36.209 1 30.9126V15.71C1 10.4136 5.41365 6 10.71 6H28.855C31.307 6 33.5629 6.88273 35.4264 8.55011L43.7633 16.1023C45.823 17.9659 47 20.6141 47 23.3603C47 26.1066 45.823 28.7548 43.7633 30.6183L35.4264 38.1706C33.5629 39.7399 31.307 40.6226 28.855 40.6226ZM10.8081 30.8145H28.855L37.0938 23.3603L28.7569 15.8081H10.8081V30.8145Z"
+        fill="#F2B4AE"
+      />
+    </g>
+    <defs>
+      <filter
+        id="filter0_ii_2525_316"
+        x="-2.92324"
+        y="1.09595"
+        width="53.8465"
+        height="44.4307"
+        filterUnits="userSpaceOnUse"
+        colorInterpolationFilters="sRGB"
+      >
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="BackgroundImageFix"
+          result="shape"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dx="3.92324" dy="5.88486" />
+        <feGaussianBlur stdDeviation="2.45203" />
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="shape"
+          result="effect1_innerShadow_2525_316"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dx="-3.92324" dy="-5.88486" />
+        <feGaussianBlur stdDeviation="2.45203" />
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0.35 0 0 0 0 0.130607 0 0 0 0 0.109375 0 0 0 0.25 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="effect1_innerShadow_2525_316"
+          result="effect2_innerShadow_2525_316"
+        />
+      </filter>
+    </defs>
+  </svg>
+);
+
+export const Shape11: React.FC<SVGAttributes> = (props) => (
+  <svg
+    width="48"
+    height="48"
+    viewBox="0 0 48 48"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <g filter="url(#filter0_ii_2491_15627)">
+      <path
+        d="M5.88889 33.9375L20.9773 16.963C22.8226 14.8871 26.0663 14.8871 27.9116 16.963L43 33.9375"
+        stroke="#FF7213"
+        strokeWidth="9.07609"
+        strokeLinecap="round"
+      />
+    </g>
+    <defs>
+      <filter
+        id="filter0_ii_2491_15627"
+        x="-1.74179"
+        y="7.00228"
+        width="52.3725"
+        height="35.3391"
+        filterUnits="userSpaceOnUse"
+        colorInterpolationFilters="sRGB"
+      >
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="BackgroundImageFix"
+          result="shape"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dx="3.09259" dy="4.63889" />
+        <feGaussianBlur stdDeviation="1.93287" />
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="shape"
+          result="effect1_innerShadow_2491_15627"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dx="-3.09259" dy="-4.63889" />
+        <feGaussianBlur stdDeviation="1.93287" />
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0.616667 0 0 0 0 0.297336 0 0 0 0 0.00256944 0 0 0 0.25 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="effect1_innerShadow_2491_15627"
+          result="effect2_innerShadow_2491_15627"
+        />
+      </filter>
+    </defs>
+  </svg>
+);
+
+export const Shape12: React.FC<SVGAttributes> = (props) => (
+  <svg
+    width="48"
+    height="48"
+    viewBox="0 0 48 48"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <g filter="url(#filter0_ii_2525_328)">
+      <path
+        d="M44.9009 44.9005H23.6C11.8102 44.9005 2.20001 35.2903 2.20001 23.5995C2.20001 11.9088 11.8102 2.19955 23.6 2.19955C35.3898 2.19955 45 11.8097 45 23.5995V44.9005H44.9009ZM23.6 12.107C17.2593 12.107 12.1074 17.2588 12.1074 23.5995C12.1074 29.9403 17.2593 35.0921 23.6 35.0921H35.0926V23.5995C34.9935 17.2588 29.8417 12.107 23.6 12.107Z"
+        fill="#023E73"
+      />
+    </g>
+    <defs>
+      <filter
+        id="filter0_ii_2525_328"
+        x="-1.76295"
+        y="-2.75415"
+        width="50.7259"
+        height="52.6083"
+        filterUnits="userSpaceOnUse"
+        colorInterpolationFilters="sRGB"
+      >
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="BackgroundImageFix"
+          result="shape"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dx="3.96296" dy="5.94444" />
+        <feGaussianBlur stdDeviation="2.47685" />
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="shape"
+          result="effect1_innerShadow_2525_328"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dx="-3.96296" dy="-5.94444" />
+        <feGaussianBlur stdDeviation="2.47685" />
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0.00911458 0 0 0 0 0.170204 0 0 0 0 0.3125 0 0 0 0.25 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="effect1_innerShadow_2525_328"
+          result="effect2_innerShadow_2525_328"
+        />
+      </filter>
+    </defs>
+  </svg>
+);
+
+export const Shape13: React.FC<SVGAttributes> = (props) => (
+  <svg
+    width="48"
+    height="48"
+    viewBox="0 0 48 48"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <g filter="url(#filter0_ii_2525_329)">
+      <path
+        d="M35.6954 45.9906C32.252 45.9906 28.3302 44.7471 24.0258 42.2602C16.0867 46.9472 9.00837 47.2341 4.8953 43.121C0.78224 39.008 1.0692 32.0253 5.66052 23.9905C1.16485 16.0514 0.78224 8.97306 4.8953 4.86C9.00837 0.746936 15.991 1.12955 24.0258 5.62522C32.0606 1.12955 39.0433 0.746936 43.1564 4.86C47.2694 8.97306 46.8868 15.9557 42.3911 23.9905C46.9825 32.0253 47.3651 39.008 43.1564 43.121C41.2433 45.0341 38.6607 45.9906 35.6954 45.9906ZM24.0258 30.8775L26.7041 32.6949C32.0606 36.3297 35.5998 36.6167 36.365 36.3297C36.652 35.4688 36.365 32.0253 32.7302 26.6688L30.9128 23.9905L32.7302 21.3122C36.365 15.9557 36.652 12.5122 36.365 11.6513C35.5041 11.3644 32.0606 11.6513 26.7041 15.2861L24.0258 17.1035L21.3476 15.2861C15.991 11.6513 12.5475 11.3644 11.6866 11.6513C11.3997 12.5122 11.6866 15.9557 15.3214 21.3122L17.1388 23.9905L15.3214 26.6688C11.6866 32.0253 11.3997 35.4688 11.6866 36.3297C12.5475 36.6167 15.991 36.3297 21.3476 32.6949L24.0258 30.8775Z"
+        fill="#F26B5E"
+      />
+    </g>
+    <defs>
+      <filter
+        id="filter0_ii_2525_329"
+        x="-1.82426"
+        y="-2.78263"
+        width="51.7381"
+        height="53.5699"
+        filterUnits="userSpaceOnUse"
+        colorInterpolationFilters="sRGB"
+      >
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="BackgroundImageFix"
+          result="shape"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dx="3.8261" dy="5.73916" />
+        <feGaussianBlur stdDeviation="2.39132" />
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="shape"
+          result="effect1_innerShadow_2525_329"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dx="-3.8261" dy="-5.73916" />
+        <feGaussianBlur stdDeviation="2.39132" />
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0.545833 0 0 0 0 0.00227431 0 0 0 0 0.00227431 0 0 0 0.25 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="effect1_innerShadow_2525_329"
+          result="effect2_innerShadow_2525_329"
+        />
+      </filter>
+    </defs>
+  </svg>
+);
+
+export const Shape14: React.FC<SVGAttributes> = (props) => (
+  <svg
+    width="48"
+    height="48"
+    viewBox="0 0 48 48"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <g filter="url(#filter0_ii_2525_330)">
+      <path
+        d="M23.6009 18.8188C24.7108 21.4362 25.7197 22.443 28.3431 23.5503C25.7197 24.6577 24.7108 25.6644 23.6009 28.2819C22.491 25.6644 21.4821 24.6577 18.8587 23.5503C21.4821 22.443 22.3901 21.4362 23.6009 18.8188ZM23.6009 1L17.1435 16C16.9417 16.4027 16.8408 16.604 16.8408 16.7047C16.7399 16.8054 16.4372 16.906 16.1345 17.0067L1 23.5503L16.0336 29.9933C16.4372 30.1946 16.639 30.2953 16.7399 30.2953C16.8408 30.396 16.9417 30.698 17.0426 31L23.5 46L29.9574 31C30.1592 30.5973 30.2601 30.396 30.2601 30.2953C30.361 30.1946 30.6637 30.094 30.9664 29.9933L46 23.5503L30.9664 17.1074C30.5628 16.906 30.361 16.8054 30.2601 16.8054C30.1592 16.7047 30.0583 16.4027 29.9574 16.1007L23.6009 1Z"
+        fill="#DBF227"
+      />
+    </g>
+    <defs>
+      <filter
+        id="filter0_ii_2525_330"
+        x="-3"
+        y="-4"
+        width="53"
+        height="55"
+        filterUnits="userSpaceOnUse"
+        colorInterpolationFilters="sRGB"
+      >
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="BackgroundImageFix"
+          result="shape"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dx="4" dy="6" />
+        <feGaussianBlur stdDeviation="2.5" />
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="shape"
+          result="effect1_innerShadow_2525_330"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dx="-4" dy="-6" />
+        <feGaussianBlur stdDeviation="2.5" />
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0.214286 0 0 0 0 0.241667 0 0 0 0 0 0 0 0 0.25 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="effect1_innerShadow_2525_330"
+          result="effect2_innerShadow_2525_330"
+        />
+      </filter>
+    </defs>
+  </svg>
+);

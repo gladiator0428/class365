@@ -1,8 +1,9 @@
 import { styled } from "styled-components";
 
 export const SevicesWrapper = styled.div`
-  background: #fafafa;
-  padding: 100px 0;
+  /* background: #fafafa; */
+  position: relative;
+  padding: 300px 0 100px;
   @media screen and (max-width: 768px) {
     background: #fff;
     padding: 80px 0 0;
@@ -114,9 +115,12 @@ export const TableBodyWrapper = styled.div`
   & > :nth-child(odd) {
     background-color: #ffffff;
   }
+  & > :nth-child(even) {
+    background-color: #fafafa;
+  }
   @media screen and (max-width: 768px) {
     & > :nth-child(odd) {
-      background-color: transparent;
+      background-color: #fafafa;
     }
     & > :nth-child(even) {
       background-color: #ffffff;

@@ -1,6 +1,8 @@
 import { styled } from "styled-components";
 
 export const CoreSectionWrapper = styled.div`
+  position: relative;
+  z-index: 1;
   max-width: 1040px;
   width: 95%;
   margin: auto;
@@ -8,7 +10,8 @@ export const CoreSectionWrapper = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 64px;
   grid-row-gap: 48px;
-  padding-top: 48px;
+  padding-top: 348px;
+  margin-top: -300px;
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     grid-gap: 5px;

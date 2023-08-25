@@ -12,7 +12,7 @@ export const Services: React.FC = () => {
   };
 
   return (
-    <Styled.SevicesWrapper>
+    <Styled.SevicesWrapper id="service">
       <Styled.ServicesContainer>
         <Styled.ServicesTitleWrapper>
           <h1>Professional Services</h1>

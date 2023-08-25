@@ -7,7 +7,7 @@ export const CoreModules: React.FC = () => {
   const { coreModules } = Data;
   const [open, setOpen] = useState(-1);
   return (
-    <Styled.CoreSectionWrapper>
+    <Styled.CoreSectionWrapper id="core">
       {coreModules.map((row, index) => (
         <Styled.CoreItem key={index} open={open === index}>
           <h3 onClick={() => setOpen(open === index ? -1 : index)}>
@@ -17,6 +17,7 @@ export const CoreModules: React.FC = () => {
           <p>{row.text}</p>
         </Styled.CoreItem>
       ))}
+      {/* <div id="add"></div> */}
     </Styled.CoreSectionWrapper>
   );
 };

@@ -86,7 +86,7 @@ export const CustomNavigator = styled.div`
   }
 `;
 
-export const DiscoverSliderWrapper = styled.div`
+export const DiscoverSliderWrapper = styled.div<{ bg?: string }>`
   width: 100%;
   & > div {
     width: 55%;
@@ -104,7 +104,7 @@ export const DiscoverSliderWrapper = styled.div`
     background: #fafafa;
   }
   .swiper-slide-active .discover-card {
-    background: #f1f6fa;
+    background: ${({ bg }) => (bg ? "#fafafa" : "#f1f6fa")};
     box-shadow: 0px 4px 20px 0px rgba(84, 84, 84, 0.25);
   }
   .swiper-pagination-bullet {

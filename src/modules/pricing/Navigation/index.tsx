@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
+// import Switch from "react-switch";
 import * as Styled from "./navigation.styles";
 import * as Data from "./data";
 
@@ -6,6 +7,10 @@ export const Navigation: React.FC<React.HTMLAttributes<HTMLElement>> = ({
   children,
 }) => {
   const { navs } = Data;
+  // const [checked, setChecked] = useState(false);
+  // const handleChange = (nextChecked: boolean) => {
+  //   setChecked(nextChecked);
+  // };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -29,6 +34,9 @@ export const Navigation: React.FC<React.HTMLAttributes<HTMLElement>> = ({
         link.classList.remove("active");
       }
     });
+
+    // const stickyNav = document.getElementById("sticky-navbar");
+    // if(stickyNav)
   };
 
   return (
@@ -46,7 +54,7 @@ export const Navigation: React.FC<React.HTMLAttributes<HTMLElement>> = ({
       {/* <div id="core"></div> */}
       <Styled.NavigationContainer>
         <Styled.GradientBG />
-        <Styled.BlurNavigationWrapper>
+        <Styled.BlurNavigationWrapper id="sticky-navbar">
           <img src="/assets/images/nav-header.png" alt="Navbar Header" />
           <Styled.NavItems id="navbar">
             {navs.map((nav, index) => (
@@ -55,6 +63,19 @@ export const Navigation: React.FC<React.HTMLAttributes<HTMLElement>> = ({
               </Styled.NavItemWrapper>
             ))}
           </Styled.NavItems>
+          <Styled.NavContentWrapper>
+            {/* <Switch
+              handleDiameter={36}
+              onChange={handleChange}
+              checked={checked}
+              className="react-switch"
+              onColor="#6772E5"
+              height={44}
+              width={94}
+              checkedIcon={<span className="handle-label">On</span>}
+              uncheckedIcon={<span className="handle-label">Off</span>}
+            /> */}
+          </Styled.NavContentWrapper>
         </Styled.BlurNavigationWrapper>
         {children}
       </Styled.NavigationContainer>

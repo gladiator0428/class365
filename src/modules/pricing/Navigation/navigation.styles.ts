@@ -68,8 +68,9 @@ export const BlurNavigationWrapper = styled.div`
     height: calc(100% - 74px);
   }
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   padding-top: 20px;
+  align-items: center;
   position: sticky;
   top: 0;
   z-index: 2;
@@ -120,5 +121,18 @@ export const NavItems = styled.div`
   z-index: 1;
   top: 0;
   display: flex;
-  flex: 1;
+  height: fit-content;
+  width: 100%;
+`;
+
+export const NavContentWrapper = styled.div`
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;

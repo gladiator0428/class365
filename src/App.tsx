@@ -8,6 +8,23 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Page.Home />} />
         <Route path="/pricing" element={<Page.Pricing />} />
+        <Route
+          path="/solution/institutes/academies"
+          element={<Page.InstitutesAcademies />}
+        />
+        <Route
+          path="/solution/institutes/schools"
+          element={<Page.InstitutesSchools />}
+        />
+        <Route
+          path="/solution/institutes/universities"
+          element={<Page.InstitutesUniversities />}
+        />
+        <Route
+          path="/solution/institutes/corporate"
+          element={<Page.InstitutesCorporate />}
+        />
+        <Route path="/solution/team" element={<Page.SolutionTeam />} />
       </Routes>
     </Router>
   );

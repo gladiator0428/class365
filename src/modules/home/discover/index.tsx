@@ -6,11 +6,11 @@ import * as Styled from "./discover.styles";
 import * as Comp from "../../../components";
 import * as Data from "./data";
 
-export const Discover: React.FC = () => {
+export const Discover: React.FC<{ bg?: string }> = ({ bg }) => {
   const { discovers } = Data;
 
   return (
-    <Styled.DiscoverWrapper>
+    <Styled.DiscoverWrapper style={{ background: bg ? bg : "transparent" }}>
       <Styled.DiscoverContainer>
         <div>
           <Comp.DiscoverIcon />
@@ -32,7 +32,7 @@ export const Discover: React.FC = () => {
           </Styled.CustomNavigator>
         </div>
       </Styled.DiscoverContainer>
-      <Styled.DiscoverSliderWrapper>
+      <Styled.DiscoverSliderWrapper bg={bg}>
         <div>
           <Swiper
             slidesPerView={"auto"}

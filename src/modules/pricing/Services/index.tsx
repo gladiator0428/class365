@@ -37,10 +37,10 @@ export const Services: React.FC = () => {
         <Styled.TableHeaderWrapper>
           <div className="row1">Professional services</div>
           <div className="row2">
-            {checked ? <GoCheckCircle /> : <GoCircle />} Virtual
+            {!checked ? <GoCheckCircle /> : <GoCircle />} Virtual
           </div>
           <div className="row3">
-            {!checked ? <GoCheckCircle /> : <GoCircle />} On-Site
+            {checked ? <GoCheckCircle /> : <GoCircle />} On-Site
           </div>
         </Styled.TableHeaderWrapper>
         <Styled.TableBodyWrapper>

@@ -5,7 +5,7 @@ import * as Data from "./data";
 export const AddonModules: React.FC = () => {
   const { addModules } = Data;
   return (
-    <Styled.AddModulesWrapper>
+    <Styled.AddModulesWrapper id="add">
       <h1>Add on Modules</h1>
       <Styled.AddModuleTableWrapper>
         <Styled.AddModuleTableHeader>
@@ -35,6 +35,7 @@ export const AddonModules: React.FC = () => {
               </div>
             </Styled.AddModuleTableRow>
           ))}
+          {/* <div id="service"></div> */}
         </Styled.AddModuleTableBody>
       </Styled.AddModuleTableWrapper>
     </Styled.AddModulesWrapper>

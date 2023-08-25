@@ -1,7 +1,9 @@
 import { styled } from "styled-components";
 
 export const AddModulesWrapper = styled.div`
-  padding: 150px 0;
+  position: relative;
+  z-index: 1;
+  padding: 300px 0 100px;
   h1 {
     color: #1e2123;
     font-size: 36px;
@@ -61,6 +63,7 @@ export const AddModuleTableBody = styled.div`
 
 export const AddModuleTableRow = styled.div`
   display: flex;
+  background: #fff;
   flex-wrap: wrap;
   div {
     padding: 34px 44px;

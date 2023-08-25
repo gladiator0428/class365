@@ -1065,3 +1065,46 @@ export const Shape14: React.FC<SVGAttributes> = (props) => (
     </defs>
   </svg>
 );
+
+export const NavShape: React.FC<SVGAttributes> = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="289"
+    height="112"
+    viewBox="0 0 289 112"
+    fill="none"
+    {...props}
+  >
+    <g filter="url(#filter0_b_2551_2066)">
+      <path
+        d="M0 30C0 13.4315 13.4315 0 30 0H218.83C227.802 0 236.302 4.015 242.001 10.944L281.455 58.9172C297.416 78.3237 283.876 107.578 258.752 107.97L30.4672 111.525C13.7179 111.786 0 98.2804 0 81.5291V30Z"
+        fill={props.fill ? props.fill : "#F1F6FA"}
+      />
+    </g>
+    <defs>
+      <filter
+        id="filter0_b_2551_2066"
+        x="-40"
+        y="-40"
+        width="368.339"
+        height="191.529"
+        filterUnits="userSpaceOnUse"
+        colorInterpolationFilters="sRGB"
+      >
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+        <feGaussianBlur in="BackgroundImageFix" stdDeviation="20" />
+        <feComposite
+          in2="SourceAlpha"
+          operator="in"
+          result="effect1_backgroundBlur_2551_2066"
+        />
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="effect1_backgroundBlur_2551_2066"
+          result="shape"
+        />
+      </filter>
+    </defs>
+  </svg>
+);

@@ -1,6 +1,8 @@
 import { styled } from "styled-components";
 
 export const FAQSectionWrapper = styled.div`
+  position: relative;
+  z-index: 1;
   max-width: 1050px;
   width: 95%;
   margin: auto;

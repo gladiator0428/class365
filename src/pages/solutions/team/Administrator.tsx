@@ -6,11 +6,17 @@ import { Discover } from "../../../modules/home";
 import { Admission } from "../../../modules/solution";
 
 export const TeamAdministrator: React.FC = () => {
-  const { landingData, recommendedData, enjoyData, integrateData } = Data;
+  const {
+    landingData,
+    recommendedData,
+    enjoyData,
+    integrateData,
+    featuresData,
+  } = Data;
   return (
     <AppLayout>
       <Section.Landing {...landingData.administrator} />
-      <Section.Features />
+      <Section.Features {...featuresData.administrator} />
       <Section.Recommended
         {...recommendedData.administrator}
         bg="#F4FAF1"

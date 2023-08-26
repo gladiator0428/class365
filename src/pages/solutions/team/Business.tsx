@@ -5,11 +5,17 @@ import * as Data from "./data";
 import { Discover } from "../../../modules/home";
 
 export const TeamBusiness: React.FC = () => {
-  const { landingData, recommendedData, enjoyData, integrateData } = Data;
+  const {
+    landingData,
+    recommendedData,
+    enjoyData,
+    integrateData,
+    featuresData,
+  } = Data;
   return (
     <AppLayout>
       <Section.Landing {...landingData.business} />
-      <Section.Features />
+      <Section.Features {...featuresData.business} />
       <Section.Recommended
         {...recommendedData.business}
         bg="#F1F6FA"

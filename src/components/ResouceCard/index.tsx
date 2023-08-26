@@ -10,7 +10,9 @@ export const ResourceCard: React.FC<IResourceCardProps> = ({
 }) => {
   return (
     <Styled.ResourceCardWrapper>
-      <Styled.ImageWrapper></Styled.ImageWrapper>
+      <Styled.ImageWrapper>
+        <img src={image} alt="" />
+      </Styled.ImageWrapper>
       <span style={{ background: badgeColor }}>{badge}</span>
       <h2>{title}</h2>
     </Styled.ResourceCardWrapper>

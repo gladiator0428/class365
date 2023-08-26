@@ -71,10 +71,106 @@ export const landingData = {
 };
 
 export const featuresData = {
-  administrator: {},
-  business: {},
-  cfo: {},
-  it: {},
+  administrator: {
+    title: "Features To Take Your Institution's Administration a Notch Higher",
+    description:
+      "Enjoy Classe365's data-driven approach for administrators! From effective student management to performance tracking, here are the features that enable administrators to craft a smooth and exceptional educational journey! ",
+    data: [
+      {
+        title: "Complete 360-Degree View of Student Performance ",
+        description:
+          "Get a full view of student performance with Classe365's 360-degree approach! Dive into attendance, grades, transcripts, health records, credits, and class schedules - all in our comprehensive platform. Unlock a greater understanding of your students' journey today!",
+        image: "/assets/images/solution-features/administrator/1.png",
+      },
+      {
+        title: "Enjoy Seamless Event and Schedule Management ",
+        description:
+          "Take the hassle out of managing your events and schedules with Classe365! Keep on top of all your important activities. We've got you covered with our integrated email, SMS, mobile app, and WhatsApp features so you can stay connected seamlessly.",
+        image: "/assets/images/solution-features/administrator/2.png",
+      },
+      {
+        title: "Stay in The Loop With Alumni Students",
+        description:
+          "Stay connected with your amazing alumni through Classe365! We've got the tools and features to keep you in the loop, whether it's sharing updates, organising reunions, staying in touch with one another, or raising funds. Our platform helps you build a network that continues to grow and thrive.",
+        image: "/assets/images/solution-features/administrator/3.png",
+      },
+    ],
+  },
+  business: {
+    title: "Enjoy The Digitally Advanced Features for Business Leaders ",
+    description:
+      "Business leaders - Do you want to achieve your yearly targets, boost admission, and enjoy seamless analytics and reporting? If yes, then Classe365 has you covered with the following features:",
+    data: [
+      {
+        title: "Raise Your Revenue by Managing Student Attrition Rates ",
+        description:
+          "Did you know reducing students' attrition rate and keeping them engaged can help increase your institution's revenue? With Classe365's awesome management tools, you can ensure that your student attrition rates stay low from the very start!",
+        image: "/assets/images/solution-features/business/1.png",
+      },
+      {
+        title: "Effortless Integrations with BI Tools Including Power BI",
+        description:
+          "Enjoy the ease of integrating BI tools with Classe365! Our platform makes connecting with popular tools like Power BI a breeze, allowing for a smoother and more efficient analytics process.",
+        image: "/assets/images/solution-features/business/2.png",
+      },
+      {
+        title: "Enjoy Multi-Campus Analytics and Reporting",
+        description:
+          "No more struggling to keep track of all your reports - Classe365's multi-campus analytics and reporting makes it super easy! Now you can monitor your entire institution from one convenient spot.",
+        image: "/assets/images/solution-features/business/3.png",
+      },
+    ],
+  },
+  cfo: {
+    title: "The Best Features of Our CFO Solution ",
+    description:
+      "At Classe365, we're here to help educational institutions save money and boost productivity. With our CFO solutions, institutions can make real-estate savings, generate extra income with our e-commerce module, and achieve environmental sustainability too!",
+    data: [
+      {
+        title: "Leverage Our Fees and Invoicing Module to Boost Revenues",
+        description:
+          "Greet increased revenue with Classe365! Our robust platform enables you to boost your revenue with our fees and invoicing features and make money selling your products on our e-commerce portal.",
+        image: "/assets/images/solution-features/cfo/1.png",
+      },
+      {
+        title: "Accurate ROI Justifications with Advanced ROI Calculator  ",
+        description:
+          "Using Classe365's ROI calculator, you can gain insight into the potential return on your investment and make smart decisions for your institution.",
+        image: "/assets/images/solution-features/cfo/2.png",
+      },
+      {
+        title: "Financial Data and Powerful Analytics in one Dashboard",
+        description:
+          "With our efficient all-in-one dashboard, managing your finances is easier than ever! With just a few clicks, you'll have instant access to your financial data and analytics. Take the reins of your business's financial future today!",
+        image: "/assets/images/solution-features/cfo/3.png",
+      },
+    ],
+  },
+  it: {
+    title: "Features We’re Proud to Introduce",
+    description:
+      "Transform your school with Classe365's comprehensive solution! From admissions to alumni connections, they have you covered. Go digital,  cut costs by up to 33%*, and get smooth integrations for tech-savvy campus life.",
+    data: [
+      {
+        title: "Smooth Integrations with Other Apps",
+        description:
+          "Having apps that work well together is essential for success! At Classe365, we make sure our integrations are effortless to use, so you can get the best experience without any hassle.",
+        image: "/assets/images/solution-features/it/1.png",
+      },
+      {
+        title: "Open APIs",
+        description:
+          "Using Classe365's Open APIs makes it a breeze to unify all of your applications and tools. We guarantee you'll be so much happier with the ease of your tech stack once you do!",
+        image: "/assets/images/solution-features/it/2.png",
+      },
+      {
+        title: "Built-in Security and Compliance Solutions",
+        description:
+          "When it comes to tech, trust is key, which is why we're big on security and compliance at Classe365. We've got you covered with our reliable and robust tools, so you can stay relaxed knowing your data is safe.",
+        image: "/assets/images/solution-features/it/3.png",
+      },
+    ],
+  },
 };
 
 export const manageData = {

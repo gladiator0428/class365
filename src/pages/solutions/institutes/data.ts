@@ -30,6 +30,144 @@ export const boostData = {
   },
 };
 
+export const improveData = {
+  academies: {
+    title: "Improve Your Academies Performance With Classe365",
+    data: [
+      {
+        title: "Performance Arts",
+        description:
+          "Classe365 makes it easy for Performing Arts institutions to keep up with increasing enrollments without any hassle. Our efficient scheduling system takes the stress out of managing multiple calendars and timetables, saving you time and effort.",
+        image: "/assets/images/improve/academies/1.png",
+      },
+      {
+        title: "Language Schools",
+        description:
+          "Are you looking to take your Language School to the next level? Classe365's Learning Management System is exactly what you need! Our multilingual services are available in 64 languages, making learning accessible from all corners of the globe.",
+        image: "/assets/images/improve/academies/2.png",
+      },
+      {
+        title: "Professional Career Academy",
+        description:
+          "Streamline your Professional Career Academy's student management process with Classe365! We offer a modern approach to simplify enrollment, grading, and more, so your administration team can save time and focus on what's important.",
+        image: "/assets/images/improve/academies/3.png",
+      },
+      {
+        title: "Health and Fitness Academy",
+        description:
+          "Classe365 allows sports & fitness academies all around the globe to integrate multiple platforms into one user-friendly interface. From the effective attendance feature to the Social Learning module that allows students to share ideas, links, and files with each, we have it all! ",
+        image: "/assets/images/improve/academies/4.png",
+      },
+      {
+        title: "After Schools and Child Care",
+        description:
+          "Classe365's cloud-based Learning Management System and Student Information System make managing day-to-day activities a breeze for Private or After School Institutions. Our tailored curriculum approach can help students reach new heights of performance.",
+        image: "/assets/images/improve/academies/5.png",
+      },
+    ],
+  },
+  schools: {
+    title: "A User-Friendly School Management System for All Kinds of Schools",
+    data: [
+      {
+        title: "Public Schools",
+        description:
+          "Classe365 is the perfect solution for public schools looking to stay up-to-date with the demands of the 21st century. It unifies SIS, LMS, and CRM tools, allowing administrators, educators, parents, and lawmakers to work together seamlessly.",
+        image: "/assets/images/improve/schools/1.png",
+      },
+      {
+        title: "Private Schools",
+        description:
+          "With Classe365, private schools can manage all their student information in one convenient place and make teaching more personalised and effective. Our school management software is highly accessible and can be scaled to meet any need.",
+        image: "/assets/images/improve/schools/2.png",
+      },
+      {
+        title: "International Baccalaureate (IB) Schools",
+        description:
+          "Simplify your IB school's management with Classe365's innovative school management system that supports more than 100 languages. Our cloud-based unified CRM for schools helps streamline admin, teaching, learning, and collaboration - giving students a personalised and global learning experience.",
+        image: "/assets/images/improve/schools/3.png",
+      },
+      {
+        title: "Religious Schools",
+        description:
+          "Classe365 understands the importance of your religious school's spiritual identity. Our admission CRM allows leaders from all faiths to bring tech into religious, faith-based, and spiritual curriculums, and boost enrolments.",
+        image: "/assets/images/improve/schools/4.png",
+      },
+    ],
+  },
+  universities: {
+    title: "Powerful University and Higher Education Management Software ",
+    data: [
+      {
+        title: "Private & Public Universities",
+        description:
+          "Simplifying the entire student life cycle in Private Universities, handling everything from applications to graduation. We also offer a unified university management system for Public Universities that helps educators build stronger connections with prospects, students, alumni, etc.",
+        image: "/assets/images/improve/universities/1.png",
+      },
+      {
+        title: "Religious Universities",
+        description:
+          "Classe365 is committed to helping religious universities reach their full potential. Our education management software has powerful tools to let you customise and build religious curriculums that suit your specific needs. Leverage our student information system to make data-driven academic decisions. ",
+        image: "/assets/images/improve/universities/2.png",
+      },
+      {
+        title: "Distance Learning and Online Universities",
+        description:
+          "Our platform helps traditional and new universities stay up-to-date with innovative and virtual teaching methods. Use Classe365’s CRM for universities to offer a fully online or customised blended learning experience to your students. ",
+        image: "/assets/images/improve/universities/3.png",
+      },
+      {
+        title: "Community Colleges",
+        description:
+          "Classe365's integrated and flexible education management software is designed to help ensure consistency across all aspects of Community Colleges. Our workflows and reports provide you with the key data and insights you need to make informed decisions.",
+        image: "/assets/images/improve/universities/4.png",
+      },
+      {
+        title: "Technical & Liberal Arts Colleges",
+        description:
+          "Classe365's ERP software can help Vocational-Technical and Liberal Arts Colleges keep track of their students, teachers, and admin staff more easily. With our help, you can create a hands-on, skills-based learning environment for your students to thrive in.",
+        image: "/assets/images/improve/universities/5.png",
+      },
+      {
+        title: "Career Colleges",
+        description:
+          "Classe365’s education management system makes it easy for Career Colleges to create programmes that blend formal academics with the practical skills students need to succeed. Its user-friendly admission CRM makes managing enrolments easier than ever before.",
+        image: "/assets/images/improve/universities/6.png",
+      },
+    ],
+  },
+  corporate: {
+    title:
+      "Advanced Education Management System for All Types of Corporate Learning",
+    data: [
+      {
+        title: "Employee Onboarding and Orientation",
+        description:
+          "Give your new hires a jump-start with Classe365's robust LMS! Leverage our user-friendly platform to offer personalised onboarding and orientation training. Implement interactive videos, documents, quizzes, and feedback loops to make training more effective. ",
+        image: "/assets/images/improve/corporate/1.png",
+      },
+      {
+        title: "Safety and Compliance Training",
+        description:
+          "Offering Safety and Compliance Training to your team members is easier than ever with Classe365. Offer customizable content and leverage our automated tracking, and reporting solutions to ensure your employees are up-to-date on safety and compliance.",
+        image: "/assets/images/improve/corporate/2.png",
+      },
+      {
+        title: "Leadership Training",
+        description:
+          "Classe365's LMS is designed to help your team members sharpen their leadership abilities. Manage leadership training, offer ongoing assistance, encourage teamwork, set objectives, and measure results, all from our comprehensive platform.",
+        image: "/assets/images/improve/corporate/3.png",
+      },
+      {
+        title: "Soft-Skills Training",
+        description:
+          "Are you looking to equip your employees with essential soft skills they need to succeed in the workplace? Classe365's CRM and LMS can help! Offer training in important skills like communication, teamwork, and time management, track progress, and give feedback easily.",
+        image: "/assets/images/improve/corporate/4.png",
+      },
+    ],
+  },
+};
+
 export const helpingData = {
   academies: {
     header: "Helping Academies Overcome Unique Challenges",

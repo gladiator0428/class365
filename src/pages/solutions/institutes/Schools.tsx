@@ -12,12 +12,13 @@ export const InstitutesSchools: React.FC = () => {
     simplifyData,
     toolkitData,
     admissionData,
+    improveData,
   } = Data;
   return (
     <AppLayout>
       <Section.Boost {...boostData.schools} />
       <Section.Trusted />
-      <Section.Improve />
+      <Section.Improve {...improveData.schools} />
       <Section.Helping {...helpingData.schools} />
       <Section.Decrease {...decreaseData.schools} />
       <Section.Simplify {...simplifyData.schools} />

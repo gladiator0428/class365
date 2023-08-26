@@ -27,7 +27,12 @@ export const ResourceCardWrapper = styled.div`
 export const ImageWrapper = styled.div`
   background: #f1f6fa;
   margin-bottom: 8px;
+  display: flex;
+  overflow: hidden;
   border-radius: 12px;
   width: 100%;
-  height: 160px;
+  img {
+    width: 100%;
+  }
+  /* height: 160px; */
 `;

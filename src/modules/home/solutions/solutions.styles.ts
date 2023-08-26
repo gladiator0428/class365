@@ -44,10 +44,13 @@ export const SolutionContainer = styled.div`
   width: 95%;
   margin: auto;
   position: absolute;
+  height: 100%;
   .list {
     max-width: 476px;
     width: 40%;
     margin-left: auto;
+    position: sticky;
+    top: 50px;
   }
   .image-wrapper {
     display: none;
@@ -55,15 +58,19 @@ export const SolutionContainer = styled.div`
   @media screen and (max-width: 1280px) {
     position: relative;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     .image-wrapper {
       display: block;
       width: 55%;
       img {
         width: 100%;
+        display: block;
         height: auto;
         image-rendering: pixelated;
       }
+    }
+    .list {
+      height: fit-content;
     }
   }
   @media screen and (max-width: 768px) {
@@ -77,11 +84,13 @@ export const SolutionContainer = styled.div`
   }
 `;
 
-export const SolutionCardWrapper = styled.div`
+export const SolutionCardWrapper = styled.a`
   &:not(:last-child) {
     margin-bottom: 34px;
   }
+  display: block;
   padding: 0 24px 16px 24px;
+  text-decoration: none;
   border-bottom: 1px solid #f0f0f0;
   transition: all 0.3s;
   cursor: pointer;
@@ -153,10 +162,13 @@ export const SolutionCardWrapper = styled.div`
       div {
         display: block;
         width: 100%;
-        padding-top: 60%;
+        /* padding-top: 60%; */
         margin-top: 10px;
         position: relative;
-        background: #d9d9d9;
+        /* background: #d9d9d9; */
+        img {
+          width: 100%;
+        }
       }
     }
   }
@@ -182,6 +194,13 @@ export const SolutionImageWrapper = styled.div<{ bg: string }>`
       width: 100%;
     }
   }
+  @media screen and (max-width: 1280px) {
+    display: none;
+  }
+`;
+
+export const SolutionImageGroup = styled.div`
+  width: 100%;
   @media screen and (max-width: 1280px) {
     display: none;
   }

@@ -6,11 +6,17 @@ import { Discover } from "../../../modules/home";
 import { Admission } from "../../../modules/solution";
 
 export const TeamCFO: React.FC = () => {
-  const { landingData, recommendedData, enjoyData, integrateData } = Data;
+  const {
+    landingData,
+    recommendedData,
+    enjoyData,
+    integrateData,
+    featuresData,
+  } = Data;
   return (
     <AppLayout>
       <Section.Landing {...landingData.cfo} />
-      <Section.Features />
+      <Section.Features {...featuresData.cfo} />
       <Section.Recommended
         {...recommendedData.cfo}
         bg="#F4FAF1"

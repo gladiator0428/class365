@@ -24,7 +24,19 @@ const App: React.FC = () => {
           path="/solution/institutes/corporate"
           element={<Page.InstitutesCorporate />}
         />
-        <Route path="/solution/team" element={<Page.SolutionTeam />} />
+        <Route
+          path="/solution/team/marketing"
+          element={<Page.TeamMarketing />}
+        />
+        <Route path="/solution/team/register" element={<Page.TeamRegister />} />
+        <Route path="/solution/team/teacher" element={<Page.TeamTeachers />} />
+        <Route
+          path="/solution/team/administrator"
+          element={<Page.TeamAdministrator />}
+        />
+        <Route path="/solution/team/business" element={<Page.TeamBusiness />} />
+        <Route path="/solution/team/cfo" element={<Page.TeamCFO />} />
+        <Route path="/solution/team/it" element={<Page.TeamIT />} />
       </Routes>
     </Router>
   );

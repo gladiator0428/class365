@@ -409,12 +409,12 @@ export const admissionData = {
         description:
           "Classe365 makes it easy to integrate corporate training schedules so that your entire team is always on the same page. Our notifications and calendar syncing features make sure your team stays in sync and never misses an event! ",
       },
-      {
-        image: "/assets/images/admission/corporate/5.png",
-        title: "SIS, LMS & CRM Built for the New Age",
-        description:
-          "From real-time reporting to campus recruitment features, Classe365’s college and university management system has you covered! It's the perfect technology platform to manage your university and higher education college. It's all hosted on the cloud and is mobile-friendly from the get-go!",
-      },
+      // {
+      //   image: "/assets/images/admission/corporate/5.png",
+      //   title: "SIS, LMS & CRM Built for the New Age",
+      //   description:
+      //     "From real-time reporting to campus recruitment features, Classe365’s college and university management system has you covered! It's the perfect technology platform to manage your university and higher education college. It's all hosted on the cloud and is mobile-friendly from the get-go!",
+      // },
     ],
   },
 };

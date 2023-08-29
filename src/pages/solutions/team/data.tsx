@@ -1,7 +1,7 @@
 export const boostData = {
   marketing: {
     subtitle: "Marketing Solutions",
-    title: "Classe365: The Best All-in-One CRM Software for Educators ",
+    title: "Classe365: The Best All-in-One CRM Software for Educators ",
     description:
       "Ready to level up your marketing game? Utilise the power of Classe365's CRM software, designed specifically for educational institutions to reach their marketing potential and beyond!",
     image: "/assets/images/boost/marketing.png",
@@ -149,7 +149,7 @@ export const featuresData = {
   it: {
     title: "Features We’re Proud to Introduce",
     description:
-      "Transform your school with Classe365's comprehensive solution! From admissions to alumni connections, they have you covered. Go digital,  cut costs by up to 33%*, and get smooth integrations for tech-savvy campus life.",
+      "Transform your school with Classe365's comprehensive solution! From admissions to alumni connections, they have you covered. Go digital,  cut costs by up to 33%*, and get smooth integrations for tech-savvy campus life.",
     data: [
       {
         title: "Smooth Integrations with Other Apps",
@@ -199,7 +199,7 @@ export const manageData = {
 
 export const registrationData = {
   marketing: {
-    title: "E-Commerce Tools for Branded Merchandise and Course Registration ",
+    title: "E-Commerce Tools for Branded Merchandise and Course Registration",
     description:
       "Let your educational institute's branding dazzle with Classe365's e-commerce solution! It's a cinch to promote branded merchandise and offers course registration. Our seamless solution will give you another hassle-free medium for branding so that you can focus on the important thing - your students.",
     image: "/assets/images/registration/marketing.png",
@@ -223,7 +223,7 @@ export const registrationData = {
 
 export const powerfulData = {
   marketing: {
-    title: "Powerful White Label for Website Branding ",
+    title: "Powerful White Label for Website Branding",
     description:
       "With Classe365's white label module, you can easily give your website a personal touch that reflects your educational Institute's branding. Your website is the first interaction parents and students have with your institution, so why not make it count?",
     image: "/assets/images/powerful/marketing.png",
@@ -275,7 +275,7 @@ export const recommendedData = {
         tab: "ecommerce",
         icon: "/assets/images/recommended/marketing/ecommerce-i.png",
         description:
-          "Take advantage of the new revenue opportunities with Classe365's E-commerce module! Our straightforward platform gives you the power to control all aspects of your products, pricing, and promotions, so your team can create an online storefront that shows off your institution's brand. ",
+          "Take advantage of the new revenue opportunities with Classe365's E-commerce module! Our straightforward platform gives you the power to control all aspects of your products, pricing, and promotions, so your team can create an online storefront that shows off your institution's brand.",
         link: "#",
         image: "/assets/images/recommended/marketing/ecommerce.png",
       },
@@ -447,7 +447,7 @@ export const recommendedData = {
         tab: "finance",
         icon: "/assets/images/recommended/business/finance-i.png",
         description:
-          "Stay on top of your accounts with our Finance & Accounting module! We make it easy for you to manage all your service providers – you can easily add, edit, view, and manage activities. Plus, you can download reports at any time for your own records!",
+          "Bid adieu to the hassle of managing all your service providers and other accounts! With Classe365, you can add, edit, and manage all the accounts in one centralised location. Download reports and keep track of all your financial activities seamlessly.",
         link: "#",
         image: "/assets/images/recommended/business/finance.png",
       },
@@ -455,7 +455,7 @@ export const recommendedData = {
         tab: "pre",
         icon: "/assets/images/recommended/business/pre-i.png",
         description:
-          "Transform your admissions process with Classe365's Pre-admission module! Enjoy the ease of having the entire journey, from inquiry to enrolment, all in one spot. Let your students finish their applications online and provide a smooth fee payment option for a stress-free experience.",
+          "Make your admissions process smoother and more efficient with Classe365. Our platform is designed to make it easy to handle all aspects of the process - from enquiry to enrolment - and even offers your students the convenience of online fee payments.",
         link: "#",
         image: "/assets/images/recommended/business/pre.png",
       },
@@ -602,7 +602,7 @@ export const enjoyData = {
   register: {
     title: "The Ultimate Tool Designed to Support Your Registrar Office ",
     description:
-      "You've got it all with Classe365's award-winning solutions! Our convenient tools give you the power to launch successful campaigns and drive enrolments and admissions with ease.",
+      "Maximise the efficiency of your registrar's office with Classe365's all-encompassing platform! With Classe365, you can effortlessly unify SIS, LMS, CRM, Analytics, Finance and Accounting, and more, with one robust solution.",
     grid: [
       {
         image: "/assets/images/enjoy/register/1.png",

@@ -45,11 +45,17 @@ export const ImproveImageWrapper = styled.div`
   margin-left: 40px;
   div {
     /* &:not(:last-child) { */
-    padding-top: 50px;
+    /* padding-top: 50px; */
+    transition: all 0.3s;
+    display: flex;
+    image-rendering: pixelated;
+    background-size: 100% 100%;
+    height: fit-content;
     /* } */
     width: 100%;
     img {
       width: 100%;
+      opacity: 0;
     }
   }
   @media screen and (max-width: 768px) {

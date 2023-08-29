@@ -62,7 +62,7 @@ export const InstitutionImageWrapper = styled.div<{ bg: string }>`
   margin-left: auto;
   background: url(${({ bg }) => bg}) no-repeat;
   background-size: 100% 100%;
-  image-rendering: pixelated;
+  /* image-rendering: pixelated; */
   transition: all 0.3s;
   img {
     opacity: 0;

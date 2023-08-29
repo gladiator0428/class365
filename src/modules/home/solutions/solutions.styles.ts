@@ -66,7 +66,7 @@ export const SolutionContainer = styled.div`
         width: 100%;
         display: block;
         height: auto;
-        image-rendering: pixelated;
+        /* image-rendering: pixelated; */
       }
     }
     .list {
@@ -84,7 +84,7 @@ export const SolutionContainer = styled.div`
   }
 `;
 
-export const SolutionCardWrapper = styled.a`
+export const SolutionCardWrapper = styled.div`
   &:not(:last-child) {
     margin-bottom: 34px;
   }
@@ -188,7 +188,7 @@ export const SolutionImageWrapper = styled.div<{ bg: string }>`
     width: calc(60% - 40px);
     background: url(${({ bg }) => bg}) no-repeat;
     background-size: 100% 100%;
-    image-rendering: pixelated;
+    /* image-rendering: pixelated; */
     img {
       opacity: 0;
       width: 100%;

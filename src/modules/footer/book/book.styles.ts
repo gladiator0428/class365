@@ -77,7 +77,7 @@ export const BookImageWrapper = styled.div`
   pointer-events: none;
   img {
     width: 100%;
-    image-rendering: pixelated;
+    /* image-rendering: pixelated; */
   }
   @media screen and (max-width: 1024px) {
     width: 55%;

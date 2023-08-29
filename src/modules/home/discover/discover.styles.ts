@@ -97,6 +97,7 @@ export const DiscoverSliderWrapper = styled.div<{ bg?: string }>`
   .swiper-slide {
     max-width: 402px;
     width: 100%;
+    height: 100%;
   }
   .swiper-slide .discover-card {
     border-radius: 12px;

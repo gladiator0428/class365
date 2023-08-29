@@ -46,12 +46,27 @@ export const GradientBG = styled.div`
   background: linear-gradient(180deg, #a389f4 0%, rgba(137, 244, 205, 0) 100%);
   height: 432px;
   width: 100%;
+  @media screen and (max-width: 1024px) {
+    top: 3px;
+    height: 264px;
+  }
 `;
 
 export const NavigationContainer = styled.div`
   padding-top: 120px;
+  & > img {
+    position: relative;
+    z-index: 3;
+    display: none;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
   @media screen and (max-width: 1024px) {
-    padding-top: 32px;
+    padding-top: 60px;
+    & > img {
+      display: block;
+    }
   }
 `;
 
@@ -319,4 +334,22 @@ export const SliderWrapper = styled.div`
       left: -100px;
     }
   }
+`;
+
+export const MobileBlurNavWrapper = styled.div`
+  position: sticky;
+  margin-top: -290px;
+  top: 0;
+  z-index: 2;
+  display: none;
+  @media screen and (max-width: 1024px) {
+    display: block;
+  }
+`;
+
+export const MobileNavMenuWrapper = styled.div`
+  height: 85px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 4px 0px rgba(79, 53, 104, 0.25);
+  backdrop-filter: blur(8px);
 `;

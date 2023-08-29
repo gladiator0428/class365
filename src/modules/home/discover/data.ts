@@ -34,9 +34,9 @@ export const discovers = [
   {
     title: "Excellent product, outstanding support",
     description:
-      "Classe365's platform is very easy to use, price is quite reasonable, and the modules we have subscribed to are very useful. The support is absolutely outstanding! There is always someone available to speedily and patiently help when you need assistance. New features and improvements are constantly added. Also, if you need a functionality, you can suggest it for future development, meaning they care about their clients' needs.",
+      "Easy to use, superb support with technical issues/bugs, prompt resolution by development team.",
     avatar: "/assets/images/temp_logo.png",
-    name: "Ren Y.",
-    role: "Registrar",
+    name: "Karin P.",
+    role: "Partner",
   },
 ];

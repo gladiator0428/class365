@@ -34,6 +34,9 @@ export const DiscoverContent = styled.div`
 
 export const DiscoverOwner = styled.div`
   margin-top: 40px;
+  h4 {
+    padding-bottom: 20px;
+  }
   img {
     width: 64px;
     height: 64px;

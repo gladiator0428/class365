@@ -63,7 +63,17 @@ export const Navigation: React.FC<React.HTMLAttributes<HTMLElement>> = ({
       </Styled.NavigationWrapper>
       {/* <div id="core"></div> */}
       <Styled.NavigationContainer>
+        <img src="/assets/images/nav-header.png" alt="Navbar Header" />
         <Styled.GradientBG />
+        <Styled.MobileBlurNavWrapper>
+          <Styled.MobileNavMenuWrapper>
+            {navs.map((nav, index) => (
+              <a key={index} href={"#" + nav.link}>
+                {nav.label}
+              </a>
+            ))}
+          </Styled.MobileNavMenuWrapper>
+        </Styled.MobileBlurNavWrapper>
         <Styled.BlurNavigationWrapper
           id="sticky-navbar"
           className={isSticky ? "is-sticky" : ""}

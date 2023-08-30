@@ -70,8 +70,8 @@ export const FeatureListWrapper = styled.div`
   max-width: 574px;
   width: 50%;
   height: fit-content;
-  position: sticky;
-  top: 50px;
+  /* position: sticky; */
+  /* top: 50px; */
   @media screen and (max-width: 768px) {
     position: relative;
     width: 100%;
@@ -84,8 +84,15 @@ export const FeatureImageWrapper = styled.div`
   max-width: 628px;
   width: 50%;
   margin-left: 40px;
-  div {
-    padding-top: 50px;
+  position: sticky;
+  top: 50px;
+  height: fit-content;
+  a {
+    display: none;
+    &.active {
+      display: flex;
+    }
+    /* padding-top: 50px; */
     img {
       width: 100%;
     }
@@ -95,11 +102,13 @@ export const FeatureImageWrapper = styled.div`
   }
 `;
 
-export const FeatureListIteam = styled.a`
+export const FeatureListIteam = styled.div`
   text-decoration: none;
   display: block;
-  padding-left: 20px;
-  border-left: 3px solid #fafafa;
+  /* border-left: 3px solid #fafafa; */
+  padding: 100px 0;
+  /* padding-left: 20px; */
+  /* min-height: 100vh; */
   div {
     display: none;
   }
@@ -110,7 +119,7 @@ export const FeatureListIteam = styled.a`
     margin-bottom: 24px;
     position: relative;
   }
-  h3::before {
+  /* h3::before {
     transition: all 0.3s;
     content: "";
     width: 3px;
@@ -119,12 +128,30 @@ export const FeatureListIteam = styled.a`
     position: absolute;
     top: 0;
     left: -23px;
-  }
+  } */
   p {
     color: #555;
     font-size: 16px;
     font-weight: 400;
     line-height: 28px; /* 175% */
+  }
+  span {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    p {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 5px;
+      color: #7f7f7f;
+      font-size: 14px;
+      svg {
+        min-width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        margin-top: 5px;
+      }
+    }
   }
   &.active {
     h3::before {

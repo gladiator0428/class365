@@ -81,18 +81,84 @@ export const featuresData = {
         description:
           "Get a full view of student performance with Classe365's 360-degree approach! Dive into attendance, grades, transcripts, health records, credits, and class schedules - all in our comprehensive platform. Unlock a greater understanding of your students' journey today!",
         image: "/assets/images/solution-features/administrator/1.png",
+        bullets: [
+          {
+            title: "Attendance Tracking",
+            description:
+              "Discover important information about student attendance, so you can stay on top of any attendance problems and deal with them right away.",
+          },
+          {
+            title: "Transcript Generation",
+            description:
+              "Generate and access student transcripts effortlessly. Easily transfer academic records and gain a comprehensive overview of their educational journey.",
+          },
+          {
+            title: "Grading Overview",
+            description:
+              "Check out all the grades of your students to get a clear picture of their performance. This will help you give timely support or intervene whenever necessary.",
+          },
+          {
+            title: "Health Record Management",
+            description:
+              "Keep all the important health records in one spot, so you can easily keep an eye on the well-being of your students.",
+          },
+        ],
       },
       {
         title: "Enjoy Seamless Event and Schedule Management ",
         description:
           "Take the hassle out of managing your events and schedules with Classe365! Keep on top of all your important activities. We've got you covered with our integrated email, SMS, mobile app, and WhatsApp features so you can stay connected seamlessly.",
         image: "/assets/images/solution-features/administrator/2.png",
+        bullets: [
+          {
+            title: "Integrated Communication Channels",
+            description:
+              "Keep in touch with your students, staff, and participants using our all-in-one platform. Say goodbye to switching between various communication tools.",
+          },
+          {
+            title: "Better Organization",
+            description:
+              "Easily manage all your important details and schedules with Classe365. Never miss a thing and stay on top of your to-do list.",
+          },
+          {
+            title: "Seamless Collaboration",
+            description:
+              "Collaborate by sharing event information, updates, and notifications. Make sure everyone's on board and working together for impactful events.",
+          },
+          {
+            title: "Hassle-Free Experience",
+            description:
+              "Let Classe365 take care of all the events and schedule details, so you can concentrate on what really matters - giving students amazing learning experiences.",
+          },
+        ],
       },
       {
         title: "Stay in The Loop With Alumni Students",
         description:
           "Stay connected with your amazing alumni through Classe365! We've got the tools and features to keep you in the loop, whether it's sharing updates, organising reunions, staying in touch with one another, or raising funds. Our platform helps you build a network that continues to grow and thrive.",
         image: "/assets/images/solution-features/administrator/3.png",
+        bullets: [
+          {
+            title: "Organise Reunions",
+            description:
+              "Easily organise alumni reunions with our platform. You can plan and handle events, send invites, and keep track of who's coming.",
+          },
+          {
+            title: "Fundraising Support",
+            description:
+              "Make the most out of Classe365's fundraising features. Whether it's for scholarships, improving infrastructure, or other projects, reach out to alumni who are keen to give back.",
+          },
+          {
+            title: "Grow Your Network",
+            description:
+              "Create an excellent alumni network that keeps growing. With Classe365, graduates can stay connected, work together, and help each other out.",
+          },
+          {
+            title: "Easy Communication",
+            description:
+              "Stay connected with your alumni Classe365's messaging tools. Keep in touch, share updates, and nurture your relationship with them even after they graduate.",
+          },
+        ],
       },
     ],
   },
@@ -106,12 +172,56 @@ export const featuresData = {
         description:
           "Did you know reducing students' attrition rate and keeping them engaged can help increase your institution's revenue? With Classe365's awesome management tools, you can ensure that your student attrition rates stay low from the very start!",
         image: "/assets/images/solution-features/business/1.png",
+        bullets: [
+          {
+            title: "Engage and Support",
+            description:
+              "Keep your students engaged and motivated by using interactive features, personalised communication, and easy access to resources.",
+          },
+          {
+            title: "Analyse Data",
+            description:
+              "Leverage our detailed analytics and real-time reports. Use this valuable data to make smart decisions based on solid data and put effective strategies into action.",
+          },
+          {
+            title: "Intervention Strategies",
+            description:
+              "Use Classe365's tools to help at-risk students by providing academic, social, or emotional support. Acting quickly can really make a difference.",
+          },
+          {
+            title: "Measure Success",
+            description:
+              "Keep tabs on how well your strategies and actions are working with Classe365's handy tools. See how they affect attrition rates and make any changes needed.",
+          },
+        ],
       },
       {
         title: "Effortless Integrations with BI Tools Including Power BI",
         description:
           "Enjoy the ease of integrating BI tools with Classe365! Our platform makes connecting with popular tools like Power BI a breeze, allowing for a smoother and more efficient analytics process.",
         image: "/assets/images/solution-features/business/2.png",
+        bullets: [
+          {
+            title: "Enhanced Analytics",
+            description:
+              "With the integration of BI tools like Power BI, Classe365 lets you dive deeper into your data. This means you can understand student performance and trends better, and make informed decisions.",
+          },
+          {
+            title: "Streamlined Reporting",
+            description:
+              "Generate personalised reports that highlight the most important metrics and trends in your institute. Get a complete and crystal-clear picture of your data like never before.",
+          },
+          {
+            title: "Simplified Data Management",
+            description:
+              "By integrating with BI tools like Power BI, Classe365 makes data management a breeze. You can effortlessly access and analyse data from various sources on one platform.",
+          },
+          {
+            title: "Scalable Solutions",
+            description:
+              "As your institute grows, using Classe365's integration with BI tools allows you to easily expand your analytical abilities.",
+          },
+        ],
       },
       {
         title: "Enjoy Multi-Campus Analytics and Reporting",
@@ -131,18 +241,84 @@ export const featuresData = {
         description:
           "Greet increased revenue with Classe365! Our robust platform enables you to boost your revenue with our fees and invoicing features and make money selling your products on our e-commerce portal.",
         image: "/assets/images/solution-features/cfo/1.png",
+        bullets: [
+          {
+            title: "Streamlined Transactions",
+            description:
+              "Easily generate revenue by simplifying invoices and payments. No more complicated stuff, just maximum efficiency.",
+          },
+          {
+            title: "Financial Tools",
+            description:
+              "Use Classe365's financial tools to boost revenue. Get all the info you need, keep tabs on earnings, and handle finances like a pro.",
+          },
+          {
+            title: "Monetization",
+            description:
+              "Monetizing your educational products and services is a breeze with Classe365. You can effortlessly package and sell them.",
+          },
+          {
+            title: "User-Friendly E-Commerce Portal",
+            description:
+              "Easily showcase and sell your products, reaching a wider audience and making more money.",
+          },
+        ],
       },
       {
         title: "Accurate ROI Justifications with Advanced ROI Calculator  ",
         description:
           "Using Classe365's ROI calculator, you can gain insight into the potential return on your investment and make smart decisions for your institution.",
         image: "/assets/images/solution-features/cfo/2.png",
+        bullets: [
+          {
+            title: "Measure Success",
+            description:
+              "Our ROI calculator helps you keep track of and evaluate the impact and effectiveness of your financial decisions.",
+          },
+          {
+            title: "Make Smart Decisions",
+            description:
+              "With the insights gained from our ROI calculator, you'll have the power to make smart choices that match your financial goals and lead to big returns.",
+          },
+          {
+            title: "Better Resource Allocation",
+            description:
+              "Understanding the potential return on investment helps you allocate resources effectively.",
+          },
+          {
+            title: "Valuable Insights",
+            description:
+              "Classe365's ROI calculator gives you all the details and valuable insights into your investments, profits, and losses.",
+          },
+        ],
       },
       {
         title: "Financial Data and Powerful Analytics in one Dashboard",
         description:
           "With our efficient all-in-one dashboard, managing your finances is easier than ever! With just a few clicks, you'll have instant access to your financial data and analytics. Take the reins of your business's financial future today!",
         image: "/assets/images/solution-features/cfo/3.png",
+        bullets: [
+          {
+            title: "Analyse Your Institute’s Financial Health",
+            description:
+              "Our dashboard offers you a hub where you can see the big picture of your business's financial health.",
+          },
+          {
+            title: "Real-Time Insights",
+            description:
+              "Keep yourself in the loop with up-to-the-minute insights and analytics, so you can make smart decisions using the latest financial data.",
+          },
+          {
+            title: "Simplified Financial Management",
+            description:
+              "Get rid of the stress of dealing with complicated financial data on different platforms. Stay on top of your institute's finances with Classes365.",
+          },
+          {
+            title: "Instant Access",
+            description:
+              "In just a few clicks, you can easily check out your financial data and analytics, without having to do any calculations or go through lots of reports.",
+          },
+        ],
       },
     ],
   },

@@ -263,6 +263,18 @@ export const SwitchWrapper = styled.div`
   span {
     color: #6772e5;
   }
+  @media screen and (max-width: 1024px) {
+    min-width: 139px;
+    width: 139px;
+    height: 30px;
+    font-size: 10px;
+    padding: 2px;
+    margin-bottom: 0;
+    div {
+      width: 71px;
+      height: 26px;
+    }
+  }
 `;
 
 export const ButtonGroup = styled.div`
@@ -273,6 +285,11 @@ export const ButtonGroup = styled.div`
   }
   .is-sticky {
     display: none;
+  }
+  @media screen and (max-width: 1024px) {
+    &.is-sticky {
+      display: none;
+    }
   }
 `;
 
@@ -352,4 +369,44 @@ export const MobileNavMenuWrapper = styled.div`
   background: rgba(255, 255, 255, 0.6);
   box-shadow: 0px 4px 4px 0px rgba(79, 53, 104, 0.25);
   backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  a {
+    max-width: 138px;
+    width: 100%;
+    padding: 0 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 4px solid transparent;
+    color: #3b3f42;
+    &.active {
+      color: #1e2123;
+      border-bottom: 4px solid #6772e5;
+    }
+  }
+`;
+
+export const MobileNavContentWrapper = styled.div`
+  width: 95%;
+  margin: auto;
+`;
+
+export const MobileNavContainer = styled.div`
+  padding: 16px;
+  margin-top: 16px;
+  background: rgba(244, 237, 255, 0.6);
+  backdrop-filter: blur(5.238095283508301px);
+  margin-bottom: 25px;
+  border-radius: 12px;
+  & > div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 `;

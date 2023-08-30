@@ -12,6 +12,10 @@ export const CoreSectionWrapper = styled.div`
   grid-row-gap: 48px;
   padding-top: 348px;
   margin-top: -300px;
+  @media screen and (max-width: 1024px) {
+    padding-top: 30px;
+    margin-top: 0;
+  }
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     grid-gap: 5px;

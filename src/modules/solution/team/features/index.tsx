@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import * as Styled from "./features.styles";
+import { BsCheck } from "react-icons/bs";
 
 type Props = {
   title: string;
@@ -8,6 +9,7 @@ type Props = {
     title: string;
     description: string;
     image: string;
+    bullets?: { title: string; description: string }[];
   }[];
 };
 
@@ -26,12 +28,14 @@ export const Features: React.FC<Props> = ({ data, description, title }) => {
     setWidth(window.innerWidth);
     let navbarLinks = document.querySelectorAll("#feature-navbar a");
     const scrollpos = window.scrollY;
+    console.log(navbarLinks);
     if (width > 768) {
       navbarLinks.forEach((link: any) => {
         let section = document.querySelector(link.hash);
         if (
-          section.offsetTop <= scrollpos + 150 &&
-          section.offsetTop + section.offsetHeight > scrollpos + 150
+          section.offsetTop <= scrollpos + window.innerHeight / 2 &&
+          section.offsetTop + section.offsetHeight >
+            scrollpos + window.innerHeight / 2
         ) {
           link.classList.add("active");
         } else {
@@ -50,22 +54,33 @@ export const Features: React.FC<Props> = ({ data, description, title }) => {
         </div>
       </Styled.FeatureTitleWrapper>
       <Styled.FeatureContainer>
-        <Styled.FeatureListWrapper id="feature-navbar">
+        <Styled.FeatureListWrapper>
           {data.map((item, key) => (
-            <Styled.FeatureListIteam key={key} href={`#team-feature${key}`}>
+            <Styled.FeatureListIteam key={key} id={`team-feature${key}`}>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
               <div>
                 <img src={item.image} alt="" />
               </div>
+              <span>
+                {item.bullets?.map((bullet, index) => (
+                  <p key={index}>
+                    <BsCheck color="#4ED163" /> {bullet.description}
+                  </p>
+                ))}
+              </span>
             </Styled.FeatureListIteam>
           ))}
         </Styled.FeatureListWrapper>
-        <Styled.FeatureImageWrapper>
+        <Styled.FeatureImageWrapper id="feature-navbar">
           {data.map((item, key) => (
-            <div id={`team-feature${key}`}>
+            <a
+              href={`#team-feature${key}`}
+              key={key}
+              className={key === 0 ? "active" : ""}
+            >
               <img src={item.image} alt="" />
-            </div>
+            </a>
           ))}
         </Styled.FeatureImageWrapper>
       </Styled.FeatureContainer>

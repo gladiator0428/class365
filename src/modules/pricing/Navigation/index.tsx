@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import * as Styled from "./navigation.styles";
 import * as Comp from "../../../components";
 import * as Data from "./data";
-import ReactSlider from "react-slider";
 import { BsArrowRight } from "react-icons/bs";
 
 export const Navigation: React.FC<React.HTMLAttributes<HTMLElement>> = ({
@@ -39,12 +38,20 @@ export const Navigation: React.FC<React.HTMLAttributes<HTMLElement>> = ({
       }
     });
 
-    // const stickyNav = document.getElementById("sticky-navbar");
-
-    if (document.documentElement.scrollTop > 50) {
-      setIsSticky(true);
+    if (window.innerWidth > 1024) {
+      if (document.documentElement.scrollTop > 50) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
     } else {
-      setIsSticky(false);
+      const stickyNav = document.getElementById("sticky-navbar");
+
+      if (stickyNav?.getBoundingClientRect().top === 0) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
     }
   };
 
@@ -65,18 +72,50 @@ export const Navigation: React.FC<React.HTMLAttributes<HTMLElement>> = ({
       <Styled.NavigationContainer>
         <img src="/assets/images/nav-header.png" alt="Navbar Header" />
         <Styled.GradientBG />
-        <Styled.MobileBlurNavWrapper>
-          <Styled.MobileNavMenuWrapper>
+        <Styled.MobileBlurNavWrapper id="sticky-navbar">
+          <Styled.MobileNavMenuWrapper id="navbar">
             {navs.map((nav, index) => (
               <a key={index} href={"#" + nav.link}>
                 {nav.label}
               </a>
             ))}
           </Styled.MobileNavMenuWrapper>
+          <Styled.MobileNavContentWrapper>
+            <Styled.MobileNavContainer className={isSticky ? "is-sticky" : ""}>
+              <div>
+                <h2>Select your student size</h2>
+                <Styled.SwitchWrapper
+                  onClick={handleChange}
+                  className={isSticky ? "is-sticky" : ""}
+                >
+                  <span>Annually</span>
+                  <span>Monthly</span>
+
+                  <div className={checked ? "checked" : ""}>
+                    {!checked ? "Annually" : "Monthly"}
+                  </div>
+                </Styled.SwitchWrapper>
+              </div>
+            </Styled.MobileNavContainer>
+            <Styled.ButtonGroup className={isSticky ? "is-sticky" : ""}>
+              <Comp.Button
+                bg="#6772E5"
+                border="#6772E5"
+                font="#fff"
+                className="shadow"
+              >
+                <span>Email This Quote</span>
+                <BsArrowRight />
+              </Comp.Button>
+              <Comp.Button bg="transparent" border="#6772E5" font="#6772E5">
+                Book a Demo
+              </Comp.Button>
+            </Styled.ButtonGroup>
+          </Styled.MobileNavContentWrapper>
         </Styled.MobileBlurNavWrapper>
         <Styled.BlurNavigationWrapper
-          id="sticky-navbar"
           className={isSticky ? "is-sticky" : ""}
+          id="sticky-navbar"
         >
           <img src="/assets/images/nav-header.png" alt="Navbar Header" />
           <Styled.NavItems id="navbar">

@@ -28,13 +28,24 @@ export const Navigation: React.FC<React.HTMLAttributes<HTMLElement>> = ({
     const scrollpos = window.scrollY;
     navbarLinks.forEach((link: any) => {
       let section = document.querySelector(link.hash);
+
       if (
         section.offsetTop <= scrollpos + 150 &&
         section.offsetTop + section.offsetHeight > scrollpos + 150
       ) {
         link.classList.add("active");
       } else {
-        link.classList.remove("active");
+        if (link.hash === "#core") {
+          let section1: any = document.querySelector("#core1");
+          if (
+            section1?.offsetTop <= scrollpos + 150 &&
+            section1?.offsetTop + section1?.offsetHeight > scrollpos + 150
+          )
+            link.classList.add("active");
+          else link.classList.remove("active");
+        } else {
+          link.classList.remove("active");
+        }
       }
     });
 
@@ -57,7 +68,7 @@ export const Navigation: React.FC<React.HTMLAttributes<HTMLElement>> = ({
 
   return (
     <>
-      <Styled.NavigationWrapper>
+      <Styled.NavigationWrapper id="core">
         <h1>
           {
             "Choose the Perfect Plan for Your Institute with Classe365’s Flexible Modular Pricing Solution"

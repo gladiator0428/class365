@@ -332,18 +332,84 @@ export const featuresData = {
         description:
           "Having apps that work well together is essential for success! At Classe365, we make sure our integrations are effortless to use, so you can get the best experience without any hassle.",
         image: "/assets/images/solution-features/it/1.png",
+        bullets: [
+          {
+            title: "Seamless Integration",
+            description:
+              "At Classe365, our goal is to offer seamless integrations that guarantee a hassle-free experience and remove any compatibility problems.",
+          },
+          {
+            title: "Data Accuracy",
+            description:
+              "Automatic data syncing between Classe365 and other tools helps to improve the accuracy and consistency of your data, which means fewer risks from manual entry.",
+          },
+          {
+            title: "Save Time and Resources",
+            description:
+              "Our integrations are super easy to use and save you tons of time and effort.",
+          },
+          {
+            title: "Enhanced Efficiency",
+            description:
+              "Classe365 makes it super easy to handle tasks all in one place, so you don't have to switch back and forth between platforms.",
+          },
+        ],
       },
       {
         title: "Open APIs",
         description:
           "Using Classe365's Open APIs makes it a breeze to unify all of your applications and tools. We guarantee you'll be so much happier with the ease of your tech stack once you do!",
         image: "/assets/images/solution-features/it/2.png",
+        bullets: [
+          {
+            title: "Scalable Adaptability",
+            description:
+              "With Classe365's Open APIs, it's easy to scale up and integrate new tools seamlessly.",
+          },
+          {
+            title: "Seamless Data Flow",
+            description:
+              "With the help of Classe365's Open APIs, your apps can easily transfer data back and forth.",
+          },
+          {
+            title: "Better User Experience",
+            description:
+              "Connect all your apps seamlessly using our Open APIs, making it easier for you to navigate and enjoy a more streamlined user experience",
+          },
+          {
+            title: "More Innovation",
+            description:
+              "Our Open APIs give you the power to be innovative. Create custom solutions and find creative ways to make the most of your tech stack.",
+          },
+        ],
       },
       {
         title: "Built-in Security and Compliance Solutions",
         description:
           "When it comes to tech, trust is key, which is why we're big on security and compliance at Classe365. We've got you covered with our reliable and robust tools, so you can stay relaxed knowing your data is safe.",
         image: "/assets/images/solution-features/it/3.png",
+        bullets: [
+          {
+            title: "Compliance Assurance",
+            description:
+              "We follow all the rules and regulations in the industry, making sure that your data is handled in a way that meets all the necessary requirements.",
+          },
+          {
+            title: "Top-Notch Protection",
+            description:
+              "Our tools got you covered! You can relax knowing your data is safe and sound. We stay one step ahead, keeping those dangers in check.",
+          },
+          {
+            title: "Data Security",
+            description:
+              "We take security very seriously because we want to be a reliable partner throughout your tech journey.",
+          },
+          {
+            title: "Peace of Mind",
+            description:
+              "With Classe365, no need to stress about data breaches or unauthorised access while you're working.",
+          },
+        ],
       },
     ],
   },

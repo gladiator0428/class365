@@ -22,10 +22,6 @@ export const headerLeftNavs = [
     to: "/pricing",
   },
   {
-    label: "Why Class  365",
-    to: "/",
-  },
-  {
     label: "More",
     to: "/",
     subMenu: [

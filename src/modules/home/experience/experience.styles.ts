@@ -7,7 +7,7 @@ export const TitleWrapper = styled.div`
   top: 0;
   background-color: #fff;
   z-index: 1;
-  position: sticky;
+  /* position: sticky; */
   h1 {
     color: #1e2123;
     text-align: center;

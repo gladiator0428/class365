@@ -43,7 +43,10 @@ export const GradientBG = styled.div`
   width: 95%;
   margin: auto;
   border-radius: 22px;
-  background: linear-gradient(180deg, #a389f4 0%, rgba(137, 244, 205, 0) 100%);
+  /* background: linear-gradient(180deg, #a389f4, #89f4cd00 100%); */
+  background: url("/assets/images/gradient-bg.png") no-repeat;
+  background-size: 100% 100%;
+
   height: 432px;
   width: 100%;
   @media screen and (max-width: 1024px) {
@@ -82,8 +85,11 @@ export const BlurNavigationWrapper = styled.div`
   &::after {
     content: "";
     width: 100%;
-    fill: rgba(244, 237, 255, 0.6);
+    /* fill: rgba(244, 237, 255, 1); */
     backdrop-filter: blur(10px);
+    background: url("/assets/images/blur-bg.png") no-repeat;
+    background-size: 100% 100%;
+
     border-radius: 0 12px 12px;
     position: absolute;
     left: 0;
@@ -130,6 +136,7 @@ export const NavItemWrapper = styled.a`
   width: 250px;
   background-image: url("/assets/images/nav.png");
   color: #3b3f42;
+  backdrop-filter: blur(10px);
   z-index: 0;
   &.active {
     z-index: 1;

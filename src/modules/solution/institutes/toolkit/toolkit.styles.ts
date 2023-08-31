@@ -38,7 +38,7 @@ export const ToolkitTitleWrapper = styled.div`
 `;
 
 export const ToolkitImageWrapper = styled.div`
-  overflow: hidden;
+  /* overflow-x: hidden; */
   margin: 30px 0;
   div {
     display: flex;

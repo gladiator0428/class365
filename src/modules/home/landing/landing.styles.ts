@@ -40,6 +40,7 @@ export const LandingSectionWrapper = styled.div`
     line-height: 60px;
     span {
       color: #9de01f;
+      font-family: "Roboto Slab", serif;
     }
     b {
       display: block;

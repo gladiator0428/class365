@@ -37,6 +37,45 @@ const App: React.FC = () => {
         <Route path="/solution/team/business" element={<Page.TeamBusiness />} />
         <Route path="/solution/team/cfo" element={<Page.TeamCFO />} />
         <Route path="/solution/team/it" element={<Page.TeamIT />} />
+
+        <Route
+          path="/solution/features/alumni"
+          element={<Page.FeatureAlumni />}
+        />
+        <Route path="/solution/features/apps" element={<Page.FeatureApps />} />
+        <Route
+          path="/solution/features/customer"
+          element={<Page.FeatureCustomer />}
+        />
+        <Route
+          path="/solution/features/finance"
+          element={<Page.FeatureFinance />}
+        />
+        <Route
+          path="/solution/features/learning"
+          element={<Page.FeatureLearning />}
+        />
+        <Route
+          path="/solution/features/pre-admission"
+          element={<Page.FeaturePreAdmission />}
+        />
+        <Route
+          path="/solution/features/student"
+          element={<Page.FeatureStudent />}
+        />
+        <Route
+          path="/solution/features/analytics"
+          element={<Page.FeatureAnalytics />}
+        />
+        <Route
+          path="/solution/features/white"
+          element={<Page.FeatureWhiteLabel />}
+        />
+        <Route
+          path="/solution/features/ecommerce"
+          element={<Page.FeatureEcommerce />}
+        />
+        <Route path="/solution/features/fee" element={<Page.FeatureFee />} />
       </Routes>
     </Router>
   );

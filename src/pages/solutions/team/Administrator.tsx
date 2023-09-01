@@ -3,7 +3,7 @@ import { AppLayout } from "../../../layouts";
 import * as Section from "../../../modules/solution/team";
 import * as Data from "./data";
 import { Discover } from "../../../modules/home";
-import { Admission } from "../../../modules/solution";
+import { Admission } from "../../../modules/solution/institutes";
 
 export const TeamAdministrator: React.FC = () => {
   const {

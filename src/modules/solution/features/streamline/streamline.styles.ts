@@ -45,6 +45,7 @@ export const StreamlineImageWrapper = styled.div`
   align-items: center;
   a {
     display: none;
+    width: 100%;
     &.active {
       display: flex;
     }

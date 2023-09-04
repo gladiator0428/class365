@@ -100,7 +100,7 @@ export const StreamlineTextWrapper = styled.div`
         font-size: 24px;
         margin-bottom: 12px;
       }
-      p {
+      l p {
         font-size: 14px;
         line-height: 20px;
       }

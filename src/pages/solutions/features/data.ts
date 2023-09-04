@@ -33,57 +33,150 @@ export const titleData = {
 
 export const landingData = {
   student: {
-    subtitle: "",
-    title: "",
-    image: "",
+    subtitle: "Student Information System",
+    title:
+      "Want To Take Your Organisation to the Next Level? Our Award-Winning Student Information System Is Here to Help!",
+    description:
+      "Classe365's SIS makes managing courses, degree audits, and tracking credits a breeze. Our personalized dashboards keep everyone informed—students, parents, teachers, and admins. Integrate into our LMS to deliver online courses and track student progress seamlessly.",
+    image: "/assets/images/feature-landing/student.png",
     data: [
       {
-        title: "",
-        description: "",
+        title: "Electives, Course & Credits Management",
+        description:
+          "Our SIS module makes managing electives, courses, and credits a breeze. We take care of all the administrative tasks so that institutions can give students top-notch education.",
+      },
+      {
+        title: "Degree Audits",
+        description:
+          "With Degree Audits, students can monitor their academic progress and performance. Institutions can also ensure students stay on track and graduate successfully.",
+      },
+      {
+        title: "Attendance & Notice Boards",
+        description:
+          "Easily keep track of student attendance, making sure the records are accurate. Use our notice board feature to keep everyone informed about important announcements and updates.",
+      },
+      {
+        title: "Grading & Assessments",
+        description:
+          "No more manual grading and assessment tracking! With Classe365, everything is automated, making it fast and precise. Institutions can effortlessly input grades, monitor student progress, and give timely feedback.",
       },
     ],
   },
   analytics: {
-    subtitle: "",
-    title: "",
-    image: "",
+    subtitle: "Analytics",
+    title:
+      "Take Your Digital Revolution to the Next Level With Classe365's Game-Changing Analytics Module",
+    description:
+      "Our Analytics Module lets educational institutions monitor each student and educator's progress in detail. You can easily keep tabs on all kinds of analytics, like health, behaviour, and academic performance, and get detailed reports.",
+    image: "/assets/images/feature-landing/analytics.png",
     data: [
       {
-        title: "",
-        description: "",
+        title: "Student & Behaviour Analytics",
+        description:
+          "Curious about your students' happiness and well-being? Are they getting along with their peers? With Classe365, you can keep tabs on their behaviour and analyse crucial data that can help you handle any unusual situations and support the students.",
+      },
+      {
+        title: "Institution Analytics",
+        description:
+          "With Classe365's Institution Analytics feature, you can easily check out your school's progress. Our comprehensive graphs and charts make it easy to see how things are going and compare them to previous stats.",
+      },
+      {
+        title: "Advanced Reporting",
+        description:
+          "Upgrade your institution's reporting with Classe365! Our Advanced Reporting Module allows you to gain deeper insights into academic performance, behaviour, and health stats for all students.",
+      },
+      {
+        title: "Adaptive Learning & AI",
+        description:
+          "We leverage Adaptive Learning and AI to help institutions make data-driven decisions. Educators can gain valuable insights into student progress, learning tendencies, and areas that need improvement.",
       },
     ],
   },
   white: {
-    subtitle: "",
-    title: "",
-    image: "",
+    subtitle: "White Label Module",
+    title:
+      "Master Your Institution's Branding Game with Classe365's White Label Module",
+    description:
+      "Our White Label module lets you add custom branding elements to your Classe365 portals. Remove the Classe365 branding, and use your own logo and custom vanity URL. Admins can even change the theme and colour of their accounts!",
+    image: "/assets/images/feature-landing/white.png",
     data: [
       {
-        title: "",
-        description: "",
+        title: "Choose Your Website’s Theme & Colour",
+        description:
+          "Our White Label Module lets you customise your website's appearance by choosing a theme and colour scheme that matches your style. Add a trendy, sophisticated, or business-like touch and bring consistency to your branding.",
+      },
+      {
+        title: "Hide or Customise “© Powered by Classe365” Test",
+        description:
+          'Conceal or modify the "© Powered by Classe365" text displayed at the bottom of your webpage, allowing your institution to shine. Embrace a customised experience that truly represents you!',
+      },
+      {
+        title: "Hide Classe365 Logo",
+        description:
+          "Don't want the Classe365 logo cluttering your emails and login pages? No problem! Our White Label Module lets you hide it or replace it with your own in just a few clicks!",
+      },
+      {
+        title: "Rewrite the URL",
+        description:
+          'Say goodbye to generic URLs! Thanks to URL rewrite, you can easily log in to your Classe365 account using your own domain. No more "youraccount.classe365.com" - instead, create something personal like "portal.yourdomain.com."',
       },
     ],
   },
   ecommerce: {
-    subtitle: "",
-    title: "",
-    image: "",
+    subtitle: "eCommerce Module",
+    title: "Expand Your Revenue Potential with Our All-in-One eCommerce Module",
+    description:
+      "With Classe365's eCommerce Module educational institutions can now create an online shop, adding a new dimension to their experience. Upload products through the admin backend and let users shop on the school's website. ",
+    image: "/assets/images/feature-landing/ecommerce.png",
     data: [
       {
-        title: "",
-        description: "",
+        title: "Increase Your Revenue",
+        description:
+          "Maximise your earnings with our eCommerce Module! It's a powerful tool that lets you unlock new money-making opportunities and boost your financial growth. Start selling online without any hassle. ",
+      },
+      {
+        title: "Control Products, Product Categories & Prices",
+        description:
+          "Manage your products and categories. Take charge of your inventory, tailor your prices and keep parents happy with exciting promos.",
+      },
+      {
+        title: "Set Up Courses as a Product",
+        description:
+          "Turn your courses into products with our eCommerce Module. Use our tools to set up your courses as products and sell them easily.",
+      },
+      {
+        title: "Comprehensive Dashboard",
+        description:
+          "Take control of your store like a pro with our comprehensive dashboard! Get a total overview of everything, from all the products to the upcoming orders. It's the ultimate command centre for staying on top of your online store.",
       },
     ],
   },
   fee: {
-    subtitle: "",
-    title: "",
-    image: "",
+    subtitle: "Fee & Donation Module",
+    title: "Expand Your Revenue Potential with Our All-in-One eCommerce Module",
+    description:
+      "Simplify your fee payment tasks with Classe365! Admins can create fee categories, track payments, and generate invoices. Parents and students can check their outstanding payments, pay online, and access invoices and yearly statements.",
+    image: "/assets/images/feature-landing/fee.png",
     data: [
       {
-        title: "",
-        description: "",
+        title: "Multiple Payment Gateway",
+        description:
+          "Classe365 works smoothly with different payment gateways, so you can pick the one that fits your institution best. Use our virtual terminal option to make payment processing a breeze.",
+      },
+      {
+        title: "Invoice and Payment Monitoring",
+        description:
+          "Setting up and monitoring your invoices and payments has never been easier! Classe365 makes it simple to create and track invoices, so you can always stay organised.",
+      },
+      {
+        title: "Online Fee Payment",
+        description:
+          "With our user-friendly platform, parents and students can effortlessly make their fee payments online. It is a convenient and secure way to handle school-related transactions without the need for cash or cheques.",
+      },
+      {
+        title: "Invoices and Full-Year Payment Downloads",
+        description:
+          "Easily download your invoices and annual statements from our website! No more waiting around for paperwork - just log in and get all your financial documents with a couple of clicks.",
       },
     ],
   },
@@ -403,6 +496,127 @@ export const streamlineData = {
       },
     ],
   },
+  student: {
+    title: "Stay Ahead of the Curve with Our Comprehensive SIS Module",
+    description: "",
+    data: [
+      {
+        title: "Manage Overall Administration",
+        description:
+          "Simplify your overall administration with Classe365's SIS Solution. Enjoy features like advanced attendance tracking, health records, gradings and assessment, and more. Our user-friendly admission CRM feature helps educational institutions efficiently handle inquiries, applications, and enrolment. Set up course roadmaps for degrees and track students' progress with our degree audit feature.",
+        image: "/assets/images/steamline/student/1.png",
+      },
+      {
+        title: "Course & Curriculum Management",
+        description:
+          "Our SIS offers various features such as course management, elective management, and credits management, all aimed at streamlining the process and ensuring effective course design. However, our services go beyond that. We also incorporate adaptive learning and artificial intelligence to keep your curriculum in line with the rapidly evolving trends in education.",
+        image: "/assets/images/steamline/student/2.png",
+      },
+      {
+        title: "Manage Lifelong Student Journey",
+        description:
+          "Graduation marks the start of a lifelong connection with your students. With our advanced SIS features, educational institutions like yours can maintain strong ties with their alumni at every stage. Our specialised alumni management tool ensures continuous support, access to resources, and opportunities for ongoing education.",
+        image: "/assets/images/steamline/student/3.png",
+      },
+    ],
+  },
+  analytics: {
+    title:
+      "Gain Valuable Insights with Classe365’s Multilayered Analytics Module",
+    description: "",
+    data: [
+      {
+        title: "Individual Level",
+        description:
+          "Are you interested in knowing the true state of your students? Whether they're experiencing happiness, maintaining good health, or developing strong relationships, Classe365 has the solution for you. At the individual level, our platform uncovers the overall behavioural trends of students, allowing you to gain a better understanding of their well-being.",
+        image: "/assets/images/steamline/analytics/1.png",
+      },
+      {
+        title: "Organisational Level",
+        description:
+          "Eliminate the hassle of dealing with spreadsheets and welcome the ease of analysing the numbers for your institution. Whether you need an overview of your institution's performance or a detailed examination of specific classes, we have you covered. Our interactive graphs and charts allow you to compare your current statistics with past data, enabling you to track your institute's progress",
+        image: "/assets/images/steamline/analytics/2.png",
+      },
+      {
+        title: "Trend Spotting",
+        description:
+          "Introducing our cutting-edge analytics feature, designed to unveil valuable insights from your data! Whether you're analysing individual or organisational data, Classe365's analytics feature will swiftly identify significant trends. Our special reports assist educational institutions in identifying specific areas for improvement, testing them, and making data-driven decisions. ",
+        image: "/assets/images/steamline/analytics/3.png",
+      },
+    ],
+  },
+  white: {
+    title:
+      "Customise Your Website to Perfectly Reflect Your Institution’s Personality",
+    description: "",
+    data: [
+      {
+        title: "Stay Independent",
+        description: `With Classe365's White Label Module, you have the flexibility to create a website and student portal that appear entirely independent. Don't want the "© Powered by Classe365" text at the page's footer? No worries, now you can easily hide it or personalise it to align with your brand. You can let go of the Classe365 logo on emails and login pages.`,
+        image: "/assets/images/steamline/white/1.png",
+      },
+      {
+        title: "Choose Themes",
+        description:
+          "Give your institution's website a makeover! With the latest addition to Classe365, you now have the ability to select from an array of stunning website themes. Whether you want to add a touch of sophistication or unleash your creative side, it's as easy as a few clicks. Say goodbye to outdated designs and welcome a sophisticated style that perfectly represents your brand's vibe and culture.",
+        image: "/assets/images/steamline/white/2.png",
+      },
+      {
+        title: "Be the Designer",
+        description:
+          "Classe365 gives you the ability to customise and upload your own theme to your website. With this feature, you can collaborate with your institution's marketing and branding team to make sure every design detail is perfect and in sync with your institution’s unique style and identity.",
+        image: "/assets/images/steamline/white/3.png",
+      },
+    ],
+  },
+  ecommerce: {
+    title: "Design an All-Encompassing eCommerce Store for Your Students",
+    description: "",
+    data: [
+      {
+        title: "Highly Secured Payment Gateway",
+        description:
+          "Say goodbye to payment woes! Classe365's eCommerce module offers secure payment options like Paypal and integrates with multiple payment gateways. Enjoy a safe and seamless online payment experience. Rest assured, your payments are secured with us.",
+        image: "/assets/images/steamline/ecommerce/1.png",
+      },
+      {
+        title: "A Fully Customizable Platform",
+        description:
+          "Stand out in the eCommerce market with Classe365's customizable features! We understand the significance of establishing a distinctive and captivating storefront. That's why we empower administrators with a variety of customization options. You can effortlessly upload images to the primary product slider on your shop's homepage. Leverage our innovative features to promote your key products and attract the attention of potential buyers.",
+        image: "/assets/images/steamline/ecommerce/2.png",
+      },
+      {
+        title: "An All-Encompassing Platform",
+        description:
+          "Take full control of your online store with Classe365. Admin users can now upload products, set prices, and manage discounts, shipping fees, and other charges. But it doesn't stop there! They can efficiently track and manage orders from the backend, and make changes to your shopping categories effortlessly. Our goal is to provide you with the necessary tools to create the best shopping experience for students and parents.",
+        image: "/assets/images/steamline/ecommerce/3.png",
+      },
+    ],
+  },
+  fee: {
+    title: "Embrace an Integrated Approach to Fee and Donation Collection",
+    description: "",
+    data: [
+      {
+        title: "Seamless Fee Payment",
+        description:
+          "Experience a hassle-free way of managing finances with Classe365's Fee and Donations Module. Our module allows you to effortlessly handle invoices and payments. Parents and students can conveniently pay fees online at their convenience, from any location. You can easily manage and download invoices and full-year statements directly from our user-friendly site.",
+        image: "/assets/images/steamline/fee/1.png",
+      },
+      {
+        title: "Multiple Payment Gateway Options",
+        description:
+          "Classe365 seamlessly integrates with various payment gateways, including virtual terminal options. This allows institutions,students, and parents the freedom to choose what suits them best. We prioritise security, giving you peace of mind when making fee payments, knowing that everything is highly secure.",
+        image: "/assets/images/steamline/fee/2.png",
+      },
+      {
+        title: "Improved Fundraising Drives ",
+        description:
+          "Simplify and enhance your fundraising efforts! Our module's donations feature is your ultimate tool for organising successful campaigns. Whether you are an educational institution or a non-profit organisation, we have everything you need. Along with this, our alumni management solutions enable you to easily reach out and involve your past students in your donation initiatives.",
+        image: "/assets/images/steamline/fee/3.png",
+      },
+    ],
+  },
 };
 
 export const tableData = {
@@ -461,6 +675,39 @@ export const tableData = {
       "New leads management",
       "Custom online application form",
       "Easy transfer of data from pre-admission to SIS",
+    ],
+  },
+
+  student: {
+    title: "Student Information System",
+    data: ["", "", "", ""],
+  },
+  analytics: {
+    title: "Student Information System",
+    data: ["", "", "", ""],
+  },
+  white: {
+    title: "White Label",
+    data: ["Custom Domains and URL rewrite", "Custom Branding"],
+  },
+  ecommerce: {
+    title: "E-Commerce",
+    data: [
+      "Online shopping cart management",
+      "Front End eCommerce Site",
+      "Stock Order Management",
+      "Discounts Management",
+      "Shipping tracking (US, UK & Aus)",
+    ],
+  },
+  fee: {
+    title: "Fund Raising Module",
+    data: [
+      "Fund raising and donation management platform",
+      "Fully featured Donar management and directory",
+      "Custom forms and campaign landing pages",
+      "CRM and payment gateway integration",
+      "Integrated with Fee and Donation Module",
     ],
   },
 };

@@ -23,10 +23,12 @@ export const FeaturesInfoWrapper = styled.div`
 `;
 
 export const FeaturesContentWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 24px;
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
   @media screen and (max-width: 768px) {
     display: none;
   }

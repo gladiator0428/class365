@@ -1,12 +1,12 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode } from "swiper";
+import { Autoplay, FreeMode } from "swiper";
 import * as Styled from "./features.styles";
 import * as Comp from "../../../components";
 import * as Data from "./data";
 
 export const Features: React.FC = () => {
-  const { features } = Data;
+  const { features, oldFeature } = Data;
   return (
     <Styled.FeaturesWrapper>
       <Styled.FeaturesInfoWrapper>
@@ -25,9 +25,29 @@ export const Features: React.FC = () => {
         </Styled.FeatureInfo>
       </Styled.FeaturesInfoWrapper>
       <Styled.FeaturesContentWrapper>
-        {features.map((row, index) => (
-          <Comp.FeatureCard key={index} {...row} />
-        ))}
+        <Swiper
+          // slidesPerView={"auto"}
+          spaceBetween={24}
+          // freeMode={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          loop
+          className="mySwiper"
+          modules={[Autoplay]}
+        >
+          <SwiperSlide>
+            {features.map((row, index) => (
+              <Comp.FeatureCard key={index} {...row} />
+            ))}
+          </SwiperSlide>
+          <SwiperSlide>
+            {oldFeature.map((row, index) => (
+              <Comp.FeatureCard key={index} {...row} />
+            ))}
+          </SwiperSlide>
+        </Swiper>
       </Styled.FeaturesContentWrapper>
       <Styled.FeaturesSwiper>
         <Swiper
@@ -39,6 +59,11 @@ export const Features: React.FC = () => {
           modules={[FreeMode]}
         >
           {features.map((row, index) => (
+            <SwiperSlide key={index}>
+              <Comp.FeatureCard {...row} />
+            </SwiperSlide>
+          ))}
+          {oldFeature.map((row, index) => (
             <SwiperSlide key={index}>
               <Comp.FeatureCard {...row} />
             </SwiperSlide>

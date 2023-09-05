@@ -277,9 +277,16 @@ export const SwitchWrapper = styled.div`
     font-size: 10px;
     padding: 2px;
     margin-bottom: 0;
+    transition: all 0.3s;
     div {
       width: 71px;
       height: 26px;
+    }
+    &.is-sticky {
+      visibility: hidden;
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
     }
   }
 `;
@@ -358,6 +365,18 @@ export const SliderWrapper = styled.div`
       left: -100px;
     }
   }
+  @media screen and (max-width: 1200px) {
+    div {
+      width: 184px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    margin: 40px 32px;
+    justify-content: center;
+    &.is-sticky {
+      display: none;
+    }
+  }
 `;
 
 export const MobileBlurNavWrapper = styled.div`
@@ -415,5 +434,51 @@ export const MobileNavContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: all 0.3s;
+  }
+  @media screen and (max-width: 1024px) {
+    h1 {
+      color: #1e2123;
+      font-size: 36px;
+      text-align: center;
+      font-weight: 700;
+      span {
+        font-size: 18px;
+        font-weight: 700;
+      }
+    }
+    &.is-sticky {
+      position: relative;
+      padding: 20px;
+      & > div:first-child {
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+        width: 0;
+        overflow: hidden;
+        /* display: none; */
+      }
+
+      h1 {
+        text-align: left;
+        width: fit-content;
+        position: absolute;
+        left: 20px;
+      }
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+`;
+
+export const StickyButton = styled.div`
+  display: none;
+  &.is-sticky {
+    display: block;
+    width: 173px;
+    .shadow {
+      padding: 16px 0;
+      font-size: 14px;
+    }
   }
 `;

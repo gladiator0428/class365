@@ -107,6 +107,28 @@ export const Navigation: React.FC<React.HTMLAttributes<HTMLElement>> = ({
                   </div>
                 </Styled.SwitchWrapper>
               </div>
+              <Styled.SliderWrapper className={isSticky ? "is-sticky" : ""}>
+                {sliderData.map((item, index) => (
+                  <div key={index} onClick={() => setSlider(index)}>
+                    <p>{item.label}</p>
+                    <span className={index === slider ? "active" : ""} />
+                  </div>
+                ))}
+              </Styled.SliderWrapper>
+              <h1>
+                $50<span>/month</span>
+              </h1>
+              <Styled.StickyButton className={isSticky ? "is-sticky" : ""}>
+                <Comp.Button
+                  bg="#6772E5"
+                  border="#6772E5"
+                  font="#fff"
+                  className="shadow"
+                >
+                  <span>Email This Quote</span>
+                  <BsArrowRight />
+                </Comp.Button>
+              </Styled.StickyButton>
             </Styled.MobileNavContainer>
             <Styled.ButtonGroup className={isSticky ? "is-sticky" : ""}>
               <Comp.Button

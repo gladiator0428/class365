@@ -76,6 +76,7 @@ const App: React.FC = () => {
           element={<Page.FeatureEcommerce />}
         />
         <Route path="/solution/features/fee" element={<Page.FeatureFee />} />
+        <Route path="*" element={<Page.NotFound />} />
       </Routes>
     </Router>
   );

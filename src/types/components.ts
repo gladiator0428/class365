@@ -4,7 +4,8 @@ export type INavItem = {
 };
 
 export type INavItemProps = {
-  subMenu?: INavItem[];
+  // subMenu?: INavItem[];
+  subMenu?: any[];
 } & INavItem;
 
 export type IButtonProps = {

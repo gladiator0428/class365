@@ -1,3 +1,36 @@
+export const oldFeature = [
+  {
+    image: "/assets/images/features/1-old.png",
+    title: "The Edtech Awards: Cool Tool Winner",
+    subtitle: "Student Information System",
+  },
+  {
+    image: "/assets/images/features/2-old.png",
+    title: "Statista Australia’s Fastest Growing Company",
+    subtitle: "Listed 2 years in a row",
+  },
+  {
+    image: "/assets/images/features/3-old.png",
+    title: "FT Top 500 fastest growing company",
+    subtitle: "Listed 2 years in a row.",
+  },
+  {
+    image: "/assets/images/features/4-old.png",
+    title: "Category Leaders : GetApp",
+    subtitle: "School Administration Software",
+  },
+  {
+    image: "/assets/images/features/5-old.png",
+    title: "Enrolment & Admission Solution: Winner",
+    subtitle: "Edtech Awards 2021 by Edtech Digest",
+  },
+  {
+    image: "/assets/images/features/6-old.png",
+    title: "Most Popular: Top 20",
+    subtitle: "School Administration",
+  },
+];
+
 export const features = [
   {
     image: "/assets/images/features/1.jpg",

@@ -44,3 +44,20 @@ export type IFAQCollapseProps = {
   onClick: () => void;
   open: boolean;
 };
+
+export type IInputProps = {
+  value: string;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onTextAreaChange?: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
+  label?: string;
+  name?: string;
+  placeholder?: string;
+};
+
+export type ISelectProps = {
+  value?: string | number;
+  onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
+  placeholder?: string;
+  label?: string;
+  options: { label: string; value: string | number }[];
+};

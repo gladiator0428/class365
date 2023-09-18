@@ -1,10 +1,11 @@
 import React from "react";
 import * as Styled from "./decrease.styles";
+import { STRAPI_API } from "../../../../config";
 
 type Props = {
   title: string;
   description: string;
-  image: string;
+  image: any;
 };
 
 export const Decrease: React.FC<Props> = ({ description, image, title }) => {
@@ -16,7 +17,7 @@ export const Decrease: React.FC<Props> = ({ description, image, title }) => {
           <p>{description}</p>
         </Styled.DecreaseInfoWrapper>
         <Styled.DecreaseImageWrapper>
-          <img src={image} alt="" />
+          <img src={STRAPI_API + image?.url} alt="" />
         </Styled.DecreaseImageWrapper>
       </Styled.DecreaseContainer>
     </Styled.DecreaseWrapper>

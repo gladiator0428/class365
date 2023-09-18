@@ -1,11 +1,12 @@
 import React from "react";
 import * as Styled from "./landing.styles";
+import { STRAPI_API } from "../../../../config";
 
 type Props = {
   subtitle: string;
   title: string;
   description: string;
-  image: string;
+  image: any;
   data: {
     title: string;
     description: string;
@@ -28,11 +29,11 @@ export const Landing: React.FC<Props> = ({
           <h4>{subtitle}</h4>
           <h1>{title}</h1>
           <p>{description}</p>
-          <img src={image} alt="" />
+          <img src={STRAPI_API + image?.url} alt="" />
         </div>
       </Styled.LandingInfoWrapper>
       <Styled.LandingDataWrapper>
-        {data.map((row, index) => (
+        {data?.map((row, index) => (
           <Styled.LandingDataItem
             style={{ background: colors[index] }}
             key={index}

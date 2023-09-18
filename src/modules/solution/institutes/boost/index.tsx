@@ -2,12 +2,13 @@ import React from "react";
 import * as Styled from "./boost.styles";
 import * as Comp from "../../../../components";
 import { BsArrowRight } from "react-icons/bs";
+import { STRAPI_API } from "../../../../config";
 
 type Props = {
   subtitle: string;
   title: string;
   description: string;
-  image: string;
+  image: any;
 };
 
 export const Boost: React.FC<Props> = ({
@@ -38,7 +39,7 @@ export const Boost: React.FC<Props> = ({
         </Styled.ButtonWrapper>
       </Styled.BoostInfoWrapper>
       <Styled.BoostImageWrapper>
-        <img src={image} alt="" />
+        <img src={STRAPI_API + image?.url} alt="" />
       </Styled.BoostImageWrapper>
     </Styled.BoostSectionWrapper>
   );

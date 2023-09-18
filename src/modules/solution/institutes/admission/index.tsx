@@ -1,10 +1,11 @@
 import React from "react";
 import * as Styled from "./admission.styles";
+import { STRAPI_API } from "../../../../config";
 
 type Props = {
   title: string;
   description: string;
-  grid: { title: string; description: string; image: string }[];
+  grid: { title: string; description: string; image: any }[];
 };
 
 export const Admission: React.FC<Props> = ({ description, grid, title }) => {
@@ -15,9 +16,9 @@ export const Admission: React.FC<Props> = ({ description, grid, title }) => {
         <p>{description}</p>
       </Styled.AdmissionInfoWrapper>
       <Styled.AdmissionGridWrapper>
-        {grid.map((item, index) => (
+        {grid?.map((item, index) => (
           <Styled.AdmissionItemWrapper key={index}>
-            <img src={item.image} alt="" />
+            <img src={STRAPI_API + item.image?.url} alt="" />
             <h4>{item.title}</h4>
             <p>{item.description}</p>
           </Styled.AdmissionItemWrapper>

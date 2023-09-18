@@ -1,9 +1,10 @@
 import React from "react";
 import * as Styled from "./helping.styles";
+import { STRAPI_API } from "../../../../config";
 
 type Props = {
   header: string;
-  image: string;
+  image: any;
   title: string;
   description: string;
 };
@@ -20,7 +21,7 @@ export const Helping: React.FC<Props> = ({
         <h1>{header}</h1>
         <Styled.HelpingContent>
           <Styled.HelpingImageWrapper>
-            <img src={image} alt="" />
+            <img src={STRAPI_API + image?.url} alt="" />
           </Styled.HelpingImageWrapper>
           <Styled.HelpingInfoWrapper>
             <h3>{title}</h3>

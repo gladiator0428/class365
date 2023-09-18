@@ -1,10 +1,11 @@
 import React from "react";
 import * as Styled from "./simplify.styles";
+import { STRAPI_API } from "../../../../config";
 
 type Props = {
   title: string;
   description: string;
-  image: string;
+  image: any;
 };
 
 export const Simplify: React.FC<Props> = ({ description, image, title }) => {
@@ -12,7 +13,7 @@ export const Simplify: React.FC<Props> = ({ description, image, title }) => {
     <Styled.SimplifyWrapper>
       <Styled.SimplifyContainer>
         <Styled.SimplifyImageWrapper>
-          <img src={image} alt="" />
+          <img src={STRAPI_API + image?.url} alt="" />
         </Styled.SimplifyImageWrapper>
         <Styled.SimplifyInfoWrapper>
           <h3>{title}</h3>

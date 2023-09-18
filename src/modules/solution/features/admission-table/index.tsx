@@ -15,7 +15,7 @@ export const AdmissionTable: React.FC<Props> = ({ data, title }) => {
         <span></span>
       </Styled.TableHeaderWrapper>
       <Styled.TableBodyWrapper>
-        {data.map((row, index) => (
+        {data?.map((row, index) => (
           <Styled.TableRowWrapper key={index}>
             <span>
               <em>

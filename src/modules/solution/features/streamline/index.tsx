@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import * as Styled from "./streamline.styles";
+import { STRAPI_API } from "../../../../config";
 
 type Props = {
   title: string;
@@ -7,7 +8,7 @@ type Props = {
   data: {
     title: string;
     description: string;
-    image: string;
+    image: any;
   }[];
 };
 
@@ -47,22 +48,22 @@ export const Streamline: React.FC<Props> = ({ data, description, title }) => {
       <p>{description}</p>
       <Styled.StreamlineStickyWrapper>
         <Styled.StreamlineImageWrapper id="streamline-navbar">
-          {data.map((item, key) => (
+          {data?.map((item, key) => (
             <a
               href={`#streamline-${key}`}
               key={key}
               className={key === 0 ? "active" : ""}
             >
-              <img src={item.image} alt="" />
+              <img src={STRAPI_API + item.image?.url} alt="" />
             </a>
           ))}
         </Styled.StreamlineImageWrapper>
         <Styled.StreamlineTextWrapper>
-          {data.map((row, index) => (
+          {data?.map((row, index) => (
             <div key={index} id={"streamline-" + index}>
               <h1>{row.title}</h1>
               <p>{row.description}</p>
-              <img src={row.image} alt="" />
+              <img src={STRAPI_API + row.image?.url} alt="" />
             </div>
           ))}
         </Styled.StreamlineTextWrapper>

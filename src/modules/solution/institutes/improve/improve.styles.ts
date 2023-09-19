@@ -1,7 +1,6 @@
 import { styled } from "styled-components";
 
 export const ImproveSectionWrapper = styled.div`
-  padding: 120px 0 0;
   max-width: 1240px;
   width: 95%;
   margin: auto;
@@ -14,7 +13,6 @@ export const ImproveSectionWrapper = styled.div`
     margin-bottom: 48px;
   }
   @media screen and (max-width: 768px) {
-    padding: 60px 0 0;
     h1 {
       font-size: 24px;
       margin-bottom: 24px;

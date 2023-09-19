@@ -34,6 +34,21 @@ export const VideoSliderWrapper = styled.div`
   width: 70%;
   .mySwiper {
     padding-bottom: 50px;
+    .swiper-button-disabled {
+      display: none;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 43px;
+      height: 43px;
+      border-radius: 9999px;
+      background-color: rgba(219, 219, 219, 0.4);
+      backdrop-filter: blur(6.711621284484863px);
+      &::after {
+        font-size: 20px;
+        color: #fff;
+      }
+    }
     .swiper-pagination-bullet {
       width: 12px;
       height: 12px;
@@ -103,6 +118,21 @@ export const VideoTabItem = styled.div<{ active?: string }>`
       padding-top: 20px;
       .mySwiper {
         padding-bottom: 50px;
+        .swiper-button-disabled {
+          display: none;
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+          width: 43px;
+          height: 43px;
+          border-radius: 9999px;
+          background-color: rgba(219, 219, 219, 0.4);
+          backdrop-filter: blur(6.711621284484863px);
+          &::after {
+            font-size: 20px;
+            color: #fff;
+          }
+        }
         .swiper-slide {
           display: flex;
         }
@@ -155,7 +185,6 @@ export const VideoSliderItem = styled.div`
   }
   video {
     width: 100%;
-    border: 1px solid red;
     border-radius: 14px;
   }
   @media screen and (max-width: 1024px) {

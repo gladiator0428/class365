@@ -124,8 +124,8 @@ export const headerLeftNavs = [
     to: "/",
     subMenu: [
       {
-        label: "More 1",
-        to: "/more1",
+        label: "Demo",
+        to: "/demo",
       },
       {
         label: "More 2",

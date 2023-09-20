@@ -56,7 +56,7 @@ export const Solutions: React.FC = () => {
   return (
     <Styled.SolutionsWrapper>
       <Styled.SolutionTitleWrapper>
-        <h5>Greate solutions for everyone</h5>
+        <h5>Great solutions for everyone</h5>
         <h1>Student Management System For Learning Management Teams</h1>
       </Styled.SolutionTitleWrapper>
       <Styled.SolutionContentWrapper id="image-wrapper1">

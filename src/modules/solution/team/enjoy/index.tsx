@@ -1,11 +1,12 @@
 import React from "react";
 import * as Styled from "./enjoy.styles";
+import { STRAPI_API } from "../../../../config";
 
 type Props = {
   title: string;
   description: string;
   grid: {
-    image: string;
+    image: any;
     title: string;
     description: string;
   }[];
@@ -17,9 +18,9 @@ export const Enjoy: React.FC<Props> = ({ description, grid, title }) => {
       <h1>{title}</h1>
       <p>{description}</p>
       <Styled.EnjoyGridWrapper>
-        {grid.map((item, index) => (
+        {grid?.map((item, index) => (
           <Styled.GridItemWrapper key={index}>
-            <img src={item.image} alt="" />
+            <img src={STRAPI_API + item.image?.url} alt="" />
             <h4>{item.title}</h4>
             <p>{item.description}</p>
           </Styled.GridItemWrapper>

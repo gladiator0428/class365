@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import * as Styled from "./features.styles";
 import { BsCheck } from "react-icons/bs";
+import { STRAPI_API } from "../../../../config";
 
 type Props = {
   title: string;
@@ -8,12 +9,18 @@ type Props = {
   data: {
     title: string;
     description: string;
-    image: string;
-    bullets?: { title: string; description: string }[];
+    image: any;
+    bullets?: any[];
   }[];
+  bullets?: { title: string; description: string }[];
 };
 
-export const Features: React.FC<Props> = ({ data, description, title }) => {
+export const Features: React.FC<Props> = ({
+  data,
+  description,
+  title,
+  bullets,
+}) => {
   const [width, setWidth] = useState(window.innerWidth);
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -54,7 +61,7 @@ export const Features: React.FC<Props> = ({ data, description, title }) => {
       </Styled.FeatureTitleWrapper>
       <Styled.FeatureContainer>
         <Styled.FeatureListWrapper>
-          {data.map((item, key) => (
+          {data?.map((item, key) => (
             <Styled.FeatureListIteam key={key} id={`team-feature${key}`}>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
@@ -64,7 +71,8 @@ export const Features: React.FC<Props> = ({ data, description, title }) => {
               <span>
                 {item.bullets?.map((bullet, index) => (
                   <p key={index}>
-                    <BsCheck color="#4ED163" /> {bullet.description}
+                    <BsCheck color="#4ED163" />{" "}
+                    {bullets?.filter((f: any) => f?.id === bullet)[0].title}
                   </p>
                 ))}
               </span>
@@ -72,13 +80,13 @@ export const Features: React.FC<Props> = ({ data, description, title }) => {
           ))}
         </Styled.FeatureListWrapper>
         <Styled.FeatureImageWrapper id="feature-navbar">
-          {data.map((item, key) => (
+          {data?.map((item, key) => (
             <a
               href={`#team-feature${key}`}
               key={key}
               className={key === 0 ? "active" : ""}
             >
-              <img src={item.image} alt="" />
+              <img src={STRAPI_API + item.image?.url} alt="" />
             </a>
           ))}
         </Styled.FeatureImageWrapper>

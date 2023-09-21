@@ -9,6 +9,7 @@ export const AppContext: React.FC<React.HTMLAttributes<HTMLElement>> = ({
   const [loading, setLoading] = useState(false);
   const [solutionFeature, setSolutionFeature] = useState<any>([]);
   const [solutionInstitute, setSolutionInstitute] = useState<any>([]);
+  const [solutionTeam, setSolutionTeam] = useState<any>([]);
 
   const solutionFeatureValue = useMemo(
     () => ({ solutionFeature, setSolutionFeature }),
@@ -18,6 +19,11 @@ export const AppContext: React.FC<React.HTMLAttributes<HTMLElement>> = ({
   const solutionInstituteValue = useMemo(
     () => ({ solutionInstitute, setSolutionInstitute }),
     [solutionInstitute]
+  );
+
+  const solutionTeamValue = useMemo(
+    () => ({ solutionTeam, setSolutionTeam }),
+    [solutionTeam]
   );
 
   useEffect(() => {
@@ -33,8 +39,10 @@ export const AppContext: React.FC<React.HTMLAttributes<HTMLElement>> = ({
       const solutionInstituteData = await axios.get(
         `${STRAPI_API}/solution-institutes`
       );
+      const solutionTeamData = await axios.get(`${STRAPI_API}/solution-teams`);
       setSolutionFeature(solutionFeatureData.data);
       setSolutionInstitute(solutionInstituteData.data);
+      setSolutionTeam(solutionTeamData.data);
       setLoading(false);
     } catch (error) {
       setLoading(false);
@@ -46,7 +54,9 @@ export const AppContext: React.FC<React.HTMLAttributes<HTMLElement>> = ({
   return (
     <Context.SolutionFeature.Provider value={solutionFeatureValue}>
       <Context.SolutionInstitute.Provider value={solutionInstituteValue}>
-        {loading ? "Loading..." : children}
+        <Context.SolutionTeam.Provider value={solutionTeamValue}>
+          {loading ? "Loading..." : children}
+        </Context.SolutionTeam.Provider>
       </Context.SolutionInstitute.Provider>
     </Context.SolutionFeature.Provider>
   );

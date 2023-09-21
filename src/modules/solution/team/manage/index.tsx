@@ -1,12 +1,13 @@
 import React from "react";
 import * as Styled from "./manage.styles";
 import { BsArrowRight } from "react-icons/bs";
+import { STRAPI_API } from "../../../../config";
 
 type Props = {
   title: string;
   description: string;
   link: string;
-  image: string;
+  image: any;
 };
 
 export const Manage: React.FC<Props> = ({
@@ -26,7 +27,7 @@ export const Manage: React.FC<Props> = ({
           </a>
         </Styled.ManageInfoWrapper>
         <Styled.ManageImageWrapper>
-          <img src={image} alt="" />
+          <img src={STRAPI_API + image?.url} alt="" />
         </Styled.ManageImageWrapper>
       </Styled.ManageContainer>
     </Styled.ManageSectionWrapper>

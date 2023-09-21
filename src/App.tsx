@@ -35,7 +35,7 @@ const App: React.FC = () => {
             element={<Page.TeamRegister />}
           />
           <Route
-            path="/solution/team/teacher"
+            path="/solution/team/teachers"
             element={<Page.TeamTeachers />}
           />
           <Route

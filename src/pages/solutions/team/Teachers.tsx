@@ -1,28 +1,57 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Trusted, Boost } from "../../../modules/solution/institutes";
 import { Discover } from "../../../modules/home";
 import { AppLayout } from "../../../layouts";
 import * as Section from "../../../modules/solution/team";
-import * as Data from "./data";
+import { SolutionTeam } from "../../../context/contexts";
 
 export const TeamTeachers: React.FC = () => {
-  const {
-    boostData,
-    enjoyData,
-    manageData,
-    powerfulData,
-    recommendedData,
-    registrationData,
-  } = Data;
+  const [data, setData] = useState<any>([]);
+  const { solutionTeam } = useContext<any>(SolutionTeam);
+
+  useEffect(() => {
+    if (solutionTeam.filter((f: any) => f.page.key === "teachers").length > 0) {
+      setData(solutionTeam.filter((f: any) => f.page.key === "teachers")[0]);
+    }
+  }, [solutionTeam]);
+
   return (
     <AppLayout>
-      <Boost {...boostData.teachers} />
+      <Boost
+        description={data?.landing_description}
+        image={data?.landing_image}
+        subtitle={data?.landing_subtitle}
+        title={data?.landing_text_title}
+      />
       <Trusted />
-      <Section.Manage {...manageData.teachers} />
-      <Section.Registration {...registrationData.teachers} />
-      <Section.Powerful {...powerfulData.teachers} />
-      <Section.Recommended {...recommendedData.teachers} />
-      <Section.Enjoy {...enjoyData.teachers} />
+      <Section.Manage
+        description={data?.manage_description}
+        image={data?.manage_image}
+        link={data?.manage_link}
+        title={data?.manage_title}
+      />
+      <Section.Registration
+        description={data?.regist_description}
+        image={data?.regist_image}
+        link={data?.regist_link}
+        title={data?.regist_title}
+      />
+      <Section.Powerful
+        description={data?.powerful_description}
+        image={data?.powerful_image}
+        link={data?.powerful_link}
+        title={data?.powerful_title}
+      />
+      <Section.Recommended
+        data={data?.recommend_data}
+        tabs={data?.recommend_tabs}
+        title={data?.recommed_title}
+      />
+      <Section.Enjoy
+        description={data?.enjoy_description}
+        grid={data?.enjoy_data}
+        title={data?.enjoy_title}
+      />
       <Discover bg="#F1F6FA" />
     </AppLayout>
   );

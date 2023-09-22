@@ -1,12 +1,13 @@
 import React from "react";
 import * as Styled from "./registration.styles";
 import { BsArrowRight } from "react-icons/bs";
+import { STRAPI_API } from "../../../../config";
 
 type Props = {
   title: string;
   description: string;
   link: string;
-  image: string;
+  image: any;
 };
 
 export const Registration: React.FC<Props> = ({
@@ -19,7 +20,7 @@ export const Registration: React.FC<Props> = ({
     <Styled.RegistrationWrapper>
       <Styled.RegistrationContainer>
         <Styled.RegistrationImageWrapper>
-          <img src={image} alt="" />
+          <img src={STRAPI_API + image?.url} alt="" />
         </Styled.RegistrationImageWrapper>
         <Styled.RegistrationInfoWrapper>
           <h3>{title}</h3>

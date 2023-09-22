@@ -30,11 +30,13 @@ export const Landing: React.FC<Props> = ({
   return (
     <Styled.LandingSectionWrapper>
       <h4 style={{ color: subtitleColor }}>{subtitle}</h4>
-      <h1>
-        {title[0]}
-        <span style={{ color: spanColor }}>{title[1]}</span>
-        {title[2]}
-      </h1>
+      {title && (
+        <h1>
+          {title[0]}
+          <span style={{ color: spanColor }}>{title[1]}</span>
+          {title[2]}
+        </h1>
+      )}
       <p>{description}</p>
       <Styled.ButtonWrapper>
         <Comp.Button

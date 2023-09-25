@@ -8,11 +8,24 @@ export const Landing: React.FC = () => {
   return (
     <Styled.LandingSectionWrapper>
       <Styled.LandingShapeWrapper>
-        <Comp.Shape1 className="shape-1" />
+        {/* <Comp.Shape1 className="shape-1" />
         <Comp.Shape2 className="shape-2" />
         <Comp.Shape3 className="shape-3" />
         <Comp.Shape4 className="shape-4" />
-        <Comp.Shape5 className="shape-5" />
+        <Comp.Shape5 className="shape-5" /> */}
+        <img src="/assets/images/shapes/CRM.png" alt="" className="shape-1" />
+        <img
+          src="/assets/images/shapes/Schedules & communication.png"
+          alt=""
+          className="shape-2"
+        />
+        <img src="/assets/images/shapes/SIS.png" alt="" className="shape-3" />
+        <img
+          src="/assets/images/shapes/Add-ons.png"
+          alt=""
+          className="shape-4"
+        />
+        <img src="/assets/images/shapes/LMS.png" alt="" className="shape-5" />
       </Styled.LandingShapeWrapper>
       <h1>
         Transforming{" "}
@@ -51,7 +64,7 @@ export const Landing: React.FC = () => {
         </Comp.Button>
       </Styled.LandingButtonWrapper>
       <Styled.LandingVideoWrapper>
-        <Comp.Shape6 />
+        <img src="/assets/images/shapes/E-commerce.png" alt="" />
         {/* <img src="/assets/images/shapes/shape-6.png" alt="shape" /> */}
       </Styled.LandingVideoWrapper>
     </Styled.LandingSectionWrapper>

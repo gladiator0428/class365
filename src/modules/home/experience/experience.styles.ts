@@ -63,6 +63,9 @@ export const ExperienceItemWrapper = styled.div<{ color: string }>`
     margin-top: 20px;
     margin-bottom: 24px;
   }
+  img {
+    width: 48px;
+  }
   p {
     color: #3b3f42;
     font-size: 18px;
@@ -114,6 +117,9 @@ export const ExperienceItemWrapper = styled.div<{ color: string }>`
       position: absolute;
       left: -5px;
       content: "";
+    }
+    img {
+      width: 32px;
     }
     div {
       display: flex;

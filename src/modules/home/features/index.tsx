@@ -3,32 +3,46 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper";
 import * as Styled from "./features.styles";
 import * as Comp from "../../../components";
-import * as Data from "./data";
+import { STRAPI_API } from "../../../config";
 
-export const Features: React.FC = () => {
-  const { features, oldFeature } = Data;
+type Props = {
+  icon: any;
+  subtitle: string;
+  text: string;
+  title: string;
+  image: any;
+  data: {
+    title: string;
+    subtitle: string;
+    image: any;
+    is_old: boolean;
+  }[];
+};
+
+export const Features: React.FC<Props> = ({
+  data,
+  icon,
+  image,
+  subtitle,
+  text,
+  title,
+}) => {
   return (
     <Styled.FeaturesWrapper>
       <Styled.FeaturesInfoWrapper>
         <Styled.FeaturesDescription>
-          {/* <Comp.FeatureIcon /> */}
-          <img src="/assets/images/clap.gif" alt="" />
-          <h2>Feathers in our cap</h2>
-          <p>
-            Most awarded EdTech company of 2021/22, including being part of Top
-            65 fastest growing companies of 2021 in APAC
-          </p>
+          <img src={STRAPI_API + icon?.url} alt="" />
+          <h2>{subtitle}</h2>
+          <p>{title}</p>
         </Styled.FeaturesDescription>
         <Styled.FeatureInfo>
-          <img src="/assets/images/features/feature.png" alt="Feature" />
-          <p>The Australia & New Zealand EdTech 50 for Management Systems</p>
+          <img src={STRAPI_API + image?.url} alt="Feature" />
+          <p>{text}</p>
         </Styled.FeatureInfo>
       </Styled.FeaturesInfoWrapper>
       <Styled.FeaturesContentWrapper>
         <Swiper
-          // slidesPerView={"auto"}
           spaceBetween={24}
-          // freeMode={true}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
@@ -38,37 +52,38 @@ export const Features: React.FC = () => {
           modules={[Autoplay]}
         >
           <SwiperSlide>
-            {features.map((row, index) => (
-              <Comp.FeatureCard key={index} {...row} />
-            ))}
+            {data
+              ?.filter((f) => !f.is_old)
+              .map((row, index) => (
+                <Comp.FeatureCard key={index} {...row} />
+              ))}
           </SwiperSlide>
           <SwiperSlide>
-            {oldFeature.map((row, index) => (
-              <Comp.FeatureCard key={index} {...row} />
-            ))}
+            {data
+              ?.filter((f) => f.is_old)
+              .map((row, index) => (
+                <Comp.FeatureCard key={index} {...row} />
+              ))}
           </SwiperSlide>
         </Swiper>
       </Styled.FeaturesContentWrapper>
       <Styled.FeaturesSwiper>
-        <Swiper
-          slidesPerView={"auto"}
-          spaceBetween={24}
-          freeMode={true}
-          loop
-          className="mySwiper"
-          modules={[FreeMode]}
-        >
-          {features.map((row, index) => (
-            <SwiperSlide key={index}>
-              <Comp.FeatureCard {...row} />
-            </SwiperSlide>
-          ))}
-          {oldFeature.map((row, index) => (
-            <SwiperSlide key={index}>
-              <Comp.FeatureCard {...row} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        {data && (
+          <Swiper
+            slidesPerView={"auto"}
+            spaceBetween={24}
+            freeMode={true}
+            loop
+            className="mySwiper"
+            modules={[FreeMode]}
+          >
+            {data?.map((row, index) => (
+              <SwiperSlide key={index}>
+                <Comp.FeatureCard {...row} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        )}
       </Styled.FeaturesSwiper>
     </Styled.FeaturesWrapper>
   );

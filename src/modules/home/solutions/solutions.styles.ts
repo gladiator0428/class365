@@ -102,7 +102,7 @@ export const SolutionCardWrapper = styled.div`
     background: #fff;
     box-shadow: 0px 2px 20px 0px #e1e1e1;
   }
-  &.active p {
+  &.active > div {
     padding-top: 16px;
     height: fit-content;
     opacity: 1;
@@ -112,7 +112,7 @@ export const SolutionCardWrapper = styled.div`
     font-size: 20px;
     font-weight: 500;
   }
-  p {
+  & > div {
     color: #3b3f42;
     font-size: 18px;
     overflow: hidden;
@@ -146,7 +146,7 @@ export const SolutionCardWrapper = styled.div`
     h3 {
       font-size: 18px;
     }
-    p {
+    & > div {
       font-size: 16px;
     }
   }
@@ -158,7 +158,7 @@ export const SolutionCardWrapper = styled.div`
     &:not(:last-child) {
       margin-bottom: 24px;
     }
-    p {
+    & > div {
       div {
         display: block;
         width: 100%;

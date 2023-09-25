@@ -1,24 +1,34 @@
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import * as Styled from "./experience.styles";
-import * as Data from "./data";
+import { STRAPI_API } from "../../../config";
 
-export const Experience: React.FC = () => {
-  const { experiences } = Data;
+type Props = {
+  title: string;
+  data: {
+    subtitle: string;
+    icon: any;
+    color: string;
+    title: string;
+    text: string;
+  }[];
+};
+
+export const Experience: React.FC<Props> = ({ data, title }) => {
   return (
     <Styled.ExperienceSectionWrapper>
       <Styled.TitleWrapper>
-        <h1>Experience the Best-in-Class with Classe365</h1>
+        <h1>{title}</h1>
       </Styled.TitleWrapper>
       <Styled.ImageWrapper>
         <img src="/assets/images/experience.png" alt="" />
       </Styled.ImageWrapper>
       <Styled.ExperienceContentWrapper>
-        {experiences.map((row, index) => (
+        {data?.map((row, index) => (
           <Styled.ExperienceItemWrapper key={index} color={row.color}>
             <h3 style={{ color: row.color }}>{row.subtitle}</h3>
             {/* {row.icon} */}
-            <img src={row.icon} alt="" />
+            <img src={STRAPI_API + row.icon?.url} alt="" />
             <h2>{row.title}</h2>
             <p>{row.text}</p>
             <h4>

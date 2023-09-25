@@ -18,9 +18,9 @@ export type IButtonProps = {
 } & React.HTMLAttributes<HTMLElement>;
 
 export type IResourceCardProps = {
-  image?: string;
+  image: any;
   badge: string;
-  badgeColor: string;
+  badge_color: string;
   title: string;
 };
 
@@ -33,7 +33,7 @@ export type IDiscoverCardProps = {
 };
 
 export type IFeatureCard = {
-  image: string;
+  image: any;
   title: string;
   subtitle: string;
 };

@@ -1,10 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { BsArrowRight } from "react-icons/bs";
 import * as Styled from "./landing.styles";
 import * as Comp from "../../../components";
 
-export const Landing: React.FC = () => {
+type Props = {
+  title_prefix?: string;
+  title_suffix?: string;
+  title_array?: any[];
+  description?: string;
+};
+
+export const Landing: React.FC<Props> = ({
+  description = "",
+  title_array = [],
+  title_prefix = "",
+  title_suffix = "",
+}) => {
+  const [title_data, setTitle_data] = useState(["Loading...", 2000]);
+
+  useEffect(() => {
+    if (title_array.length > 0) {
+      console.log(title_data);
+      setTitle_data(title_array);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [title_array]);
+
   return (
     <Styled.LandingSectionWrapper>
       <Styled.LandingShapeWrapper>
@@ -28,7 +50,7 @@ export const Landing: React.FC = () => {
         <img src="/assets/images/shapes/LMS.png" alt="" className="shape-5" />
       </Styled.LandingShapeWrapper>
       <h1>
-        Transforming{" "}
+        {title_prefix}{" "}
         <span>
           <TypeAnimation
             sequence={[
@@ -43,12 +65,9 @@ export const Landing: React.FC = () => {
             repeat={Infinity}
           />
         </span>
-        <b>One Institution at a Time</b>
+        <b>{title_suffix}</b>
       </h1>
-      <p>
-        Unlock a seamless learner journey. From admission to alumni networking,
-        and beyond - our complete education ERP software has you covered.
-      </p>
+      <p>{description}</p>
       <Styled.LandingButtonWrapper>
         <Comp.Button
           bg="#6772E5"

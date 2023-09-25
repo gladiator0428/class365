@@ -17,7 +17,7 @@ export const FeatureEcommerce: React.FC = () => {
   }, [solutionFeature]);
 
   return (
-    <AppLayout>
+    <AppLayout is_new_book={true}>
       <Section.Landing
         data={data?.landing_arrays}
         description={data?.landing_description}

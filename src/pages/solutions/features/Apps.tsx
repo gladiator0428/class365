@@ -13,7 +13,7 @@ export const FeatureApps: React.FC = () => {
   }, [solutionFeature]);
 
   return data ? (
-    <AppLayout>
+    <AppLayout is_new_book={true}>
       <Section.Title
         subtitle={data?.landing_subtitle}
         title={data?.landing_title}

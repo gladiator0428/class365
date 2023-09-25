@@ -176,8 +176,6 @@ export const NavContentWrapper = styled.div`
   width: 100%;
   z-index: 3;
   display: flex;
-  padding-top: 30px;
-  display: flex;
   flex-direction: column;
   align-items: center;
   &.is-sticky {

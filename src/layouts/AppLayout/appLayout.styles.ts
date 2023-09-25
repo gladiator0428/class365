@@ -41,7 +41,10 @@ export const HeaderNavContainer = styled.div`
   }
 `;
 
-export const FooterWrapper = styled.div``;
+export const FooterWrapper = styled.div`
+  position: relative;
+  overflow: hidden;
+`;
 
 export const MobileHeaderNavWrapper = styled.div`
   display: none;

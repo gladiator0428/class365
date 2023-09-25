@@ -17,7 +17,8 @@ export const Experience: React.FC = () => {
         {experiences.map((row, index) => (
           <Styled.ExperienceItemWrapper key={index} color={row.color}>
             <h3 style={{ color: row.color }}>{row.subtitle}</h3>
-            {row.icon}
+            {/* {row.icon} */}
+            <img src={row.icon} alt="" />
             <h2>{row.title}</h2>
             <p>{row.text}</p>
             <h4>

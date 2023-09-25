@@ -10,9 +10,11 @@ export const Resources: React.FC = () => {
     <Styled.ResourcesWrapper>
       <h2>All the News and Resources You Need</h2>
       <Styled.ResourcesGridWrapper>
-        {resources.map((row, index) => (
-          <Comp.ResourceCard {...row} key={index} />
-        ))}
+        {resources
+          .filter((f, index) => index < 3)
+          .map((row, index) => (
+            <Comp.ResourceCard {...row} key={index} />
+          ))}
       </Styled.ResourcesGridWrapper>
       <Styled.SeeMore>
         <span>See more resources</span>

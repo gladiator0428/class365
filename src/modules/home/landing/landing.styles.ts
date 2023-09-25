@@ -115,10 +115,11 @@ export const LandingVideoWrapper = styled.div`
   width: 100%;
   height: 554px;
   position: relative;
-  svg {
+  img {
     position: absolute;
     bottom: -20px;
     right: -20px;
+    width: 48px;
     transform: translateY(0px) rotate(26.368deg);
     animation: ${bubbleAnim} 2s infinite ease-in-out;
   }
@@ -138,7 +139,8 @@ export const LandingShapeWrapper = styled.div`
   left: 0;
   bottom: 0;
   pointer-events: none;
-  svg {
+  img {
+    width: 48px;
     position: absolute;
     transform: translateY(10px) rotate(26.368deg);
   }

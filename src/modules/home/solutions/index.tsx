@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import * as Styled from "./solutions.styles";
 import { BsArrowRight } from "react-icons/bs";
 import { STRAPI_API } from "../../../config";
+import { solutions } from "./data";
 
 type Props = {
   subtitle?: string;
@@ -25,11 +26,13 @@ export const Solutions: React.FC<Props> = ({ data = [], subtitle, title }) => {
       <Styled.SolutionContentWrapper id="image-wrapper1">
         <Styled.SolutionImageGroup>
           <Styled.SolutionImageWrapper
-            bg={STRAPI_API + data[selected]?.image?.url}
+            bg={solutions[selected]?.image}
+            // bg={STRAPI_API + data[selected]?.image?.url}
           >
             <div>
               <img
-                src={STRAPI_API + data[selected]?.image?.url}
+                src={solutions[selected]?.image}
+                // src={STRAPI_API + data[selected]?.image?.url}
                 alt="Solution"
               />
             </div>
@@ -37,14 +40,15 @@ export const Solutions: React.FC<Props> = ({ data = [], subtitle, title }) => {
         </Styled.SolutionImageGroup>
         <Styled.SolutionContainer>
           <div className="image-wrapper">
-            {data.map((item, key) => (
+            {solutions.map((item, key) => (
               <div key={key} id={`solution1-image-${key}`}>
-                <img src={STRAPI_API + item.image.url} alt="Solution" />
+                <img src={item.image} alt="Solution" />
+                {/* <img src={STRAPI_API + item.image.url} alt="Solution" /> */}
               </div>
             ))}
           </div>
           <div className="list">
-            {data.map((row, key) => (
+            {solutions.map((row, key) => (
               <Styled.SolutionCardWrapper
                 key={key}
                 className={`${key === selected ? "active" : ""}`}
@@ -54,7 +58,8 @@ export const Solutions: React.FC<Props> = ({ data = [], subtitle, title }) => {
                 <div>
                   <span>{row.text}</span>
                   <div>
-                    <img src={STRAPI_API + row.image.url} alt="" />
+                    <img src={row.image} alt="" />
+                    {/* <img src={STRAPI_API + row.image.url} alt="" /> */}
                   </div>
                   <h4>
                     Start Free 14-days trial <BsArrowRight />

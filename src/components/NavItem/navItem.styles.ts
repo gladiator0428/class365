@@ -27,7 +27,7 @@ export const NavLabel = styled.div`
   }
 `;
 
-export const SubMenuWrapper = styled.div<{ active: boolean }>`
+export const SubMenuWrapper = styled.div<{ active?: string }>`
   position: absolute;
   left: 0;
   top: 30px;

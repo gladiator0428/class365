@@ -63,7 +63,7 @@ export const NavItem: React.FC<Type.INavItemProps> = ({
         <span>{label}</span>
         {subMenu && <BsChevronDown size={11} />}
       </Styled.NavLabel>
-      <Styled.SubMenuWrapper active={isActive === label}>
+      <Styled.SubMenuWrapper active={isActive === label ? "true" : undefined}>
         {subMenu?.map((item, key) => (
           <Styled.SubMenuItemWrapper
             key={key}
@@ -88,7 +88,7 @@ export const NavItem: React.FC<Type.INavItemProps> = ({
             <span>{item.label}</span>
             {item.subMenu ? <BsChevronRight size={11} /> : null}
             <Styled.SubMenuWrapper
-              active={isSubActive === item.label}
+              active={isSubActive === item.label ? "true" : undefined}
               className="sub-menu"
             >
               {item?.subMenu?.map((item1: any, key1: number) => (

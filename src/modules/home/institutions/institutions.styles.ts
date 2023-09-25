@@ -178,10 +178,12 @@ export const InstitutionSwiperItemWrapper = styled.div`
     padding-bottom: 16px;
   }
   .image-wrapper {
-    background: #d9d9d9;
+    /* background: #d9d9d9; */
     position: relative;
-    padding-top: 60%;
     margin-bottom: 24px;
+    img {
+      width: 100%;
+    }
   }
   .info-wrapper {
     display: flex;

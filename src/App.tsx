@@ -92,6 +92,7 @@ const App: React.FC = () => {
           <Route path="/solution/features/fee" element={<Page.FeatureFee />} />
           <Route path="/contact" element={<Page.ContactUs />} />
           <Route path="/demo" element={<Page.Demo />} />
+          <Route path="/roi" element={<Page.ROICalc />} />
           <Route path="*" element={<Page.NotFound />} />
         </Routes>
       </Router>

@@ -160,8 +160,8 @@ export const headerLeftNavs = [
         to: "/demo",
       },
       {
-        label: "More 2",
-        to: "/more2",
+        label: "ROI Calculator",
+        to: "/roi",
       },
     ],
   },

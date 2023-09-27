@@ -186,13 +186,15 @@ export const SolutionImageWrapper = styled.div<{ bg: string }>`
   div {
     display: flex;
     transition: all 0.3s;
-    width: calc(70% - 40px);
-    background: url(${({ bg }) => bg}) no-repeat;
-    background-size: contain;
+    width: calc(60% - 40px);
+    /* background: url(${({ bg }) => bg}) no-repeat; */
+    /* background-size: contain; */
     /* image-rendering: pixelated; */
     img {
-      opacity: 0;
+      width: 814px;
+
       max-width: 100%;
+      height: auto;
     }
   }
   @media screen and (max-width: 1280px) {
